@@ -948,7 +948,7 @@ and it will create a button dependant on those variables.
 */
 .woo-btn, .woocommerce a.button, .woocommerce button.button, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button, .woocommerce input.button.alt, .woocommerce input#submit, .woocommerce input[type="submit"], .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button, .woocommerce-page input.button.alt, .woocommerce-page input#submit, .woocommerce-page input[type="submit"], .sensei a.button, .sensei button.button, .sensei a.button.alt, .sensei button.button.alt, .sensei input.button, .sensei input.button.alt, .sensei input#submit, .sensei input[type="submit"], .sensei .sensei-message.tick a.next-lesson {
   padding: 0 1em 0 0 !important;
-  background-image: url(../images/assets/backgrounds/right-arrow.svg) !important;
+  /*background-image: url(../images/assets/backgrounds/right-arrow.svg) !important;*/
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: 18px 18px; }

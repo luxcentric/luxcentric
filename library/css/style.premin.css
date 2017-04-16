@@ -519,6 +519,7 @@ span.amp {
 
 #submit,
 .comment-reply-link,
+.xsmall-btn,
 .large-btn,
 .sensei .sensei-message.tick a.next-lesson,
 .sensei a.button,
@@ -528,9 +529,24 @@ span.amp {
 .sensei input#submit,
 .sensei input.button,
 .sensei input.button.alt,
-.sensei input[type=submit],
-.small-btn,
-.small-white-btn,
+.sensei input[type=submit] {
+    display: inline-block;
+    position: relative;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f16465!important;
+    color: #fff!important;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0px;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 16px
+}
+
+#submit,
 .woo-btn,
 .woocommerce a.button,
 .woocommerce a.button.alt,
@@ -553,21 +569,22 @@ span.amp {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: transparent!important;
-    color: #f16465!important;
+    background-color: #f16465!important;
+    color: #fff!important;
     font-size: 1em;
     font-weight: 400;
     line-height: 1;
-    padding: 0;
-    border: 0;
+    padding: 0px;
     outline: 0;
-    cursor: pointer
+    cursor: pointer;
 }
 
 #submit:focus,
 #submit:hover,
 .comment-reply-link:focus,
 .comment-reply-link:hover,
+.xsmall-btn:focus,
+.xsmall-btn:hover,
 .large-btn:focus,
 .large-btn:hover,
 .sensei .sensei-message.tick a.next-lesson:focus,
@@ -619,6 +636,7 @@ span.amp {
 
 #submit:active,
 .comment-reply-link:active,
+.xsmall-btn:active,
 .large-btn:active,
 .sensei .sensei-message.tick a.next-lesson:active,
 .sensei a.button:active,
@@ -650,7 +668,14 @@ span.amp {
 .sensei input#submit,
 .sensei input.button,
 .sensei input.button.alt,
-.sensei input[type=submit],
+.sensei input[type=submit] {
+    padding: 6px 1em!important;
+    )!important;
+    background-repeat: no-repeat!important;
+    background-position: right center!important;
+    background-size: 18px 18px;
+}
+
 .woo-btn,
 .woocommerce a.button,
 .woocommerce a.button.alt,
@@ -668,16 +693,17 @@ span.amp {
 .woocommerce-page input.button,
 .woocommerce-page input.button.alt,
 .woocommerce-page input[type=submit] {
-    padding: 0 1em 0 0!important;
-    background-image: url(../images/assets/backgrounds/right-arrow.svg)!important;
+    padding: 6px 1em!important;
+    )!important;
     background-repeat: no-repeat!important;
     background-position: right center!important;
-    background-size: 18px 18px
+    background-size: 18px 18px;
 }
 
 .small-btn .iconic {
     display: inline-block;
-    vertical-align: middle
+    vertical-align: middle;
+    padding-top: 4px
 }
 
 .small-btn .iconic .icon-left-arrow:before,
@@ -688,16 +714,34 @@ span.amp {
 
 .small-white-btn .iconic {
     display: inline-block;
-    vertical-align: middle
+    vertical-align: middle;
+    padding-top: 4px
+}
+
+.xsmall-btn {
+    display: inline-block;
+    position: relative;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f16465!important;
+    color: #fff!important;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 0.8em;
+    line-height: 1;
+    padding: 3px 8px
 }
 
 .large-btn {
     font-size: 1.52em;
-    line-height: 1
+    line-height: 1;
+    padding: 6px 30px
 }
 
 .large-btn .iconic {
-    display: inline-block;
+    display: none;
     vertical-align: middle
 }
 
@@ -1276,7 +1320,8 @@ h5 {
 
 .iconic .icon-right-arrow:before {
     content: "\6e";
-    color: #f16465
+    color: #f16465;
+    display: none
 }
 
 .iconic .icon-strategy:before {
@@ -2582,14 +2627,18 @@ h5 {
 }
 
 #tribe-events-content-wrapper .tribe-events-list .tribe-events-loop .tribe-events-list-event-description .tribe-events-read-more {
-    color: #f16465;
-    text-transform: uppercase
+    color: #fff;
+    text-transform: uppercase;
+    background: #f16465;
+    padding: 8px;
+    border-radius: 18px;
 }
 
 #tribe-events-content-wrapper .tribe-events-list .tribe-events-loop .tribe-events-list-event-description .tribe-events-read-more .iconic .icon-right-arrow:before {
     font-size: 1.25rem;
     line-height: 1;
-    vertical-align: middle
+    vertical-align: middle;
+    display: none;
 }
 
 #tribe-events-content-wrapper .tribe-events-list #tribe-events-footer {
@@ -2598,7 +2647,7 @@ h5 {
 
 #tribe-events-content-wrapper .tribe-events-list #tribe-events-footer .tribe-events-sub-nav li a {
     background: 0 0;
-    color: #f16465
+    color: #fff
 }
 
 .tribe-mini-calendar-wrapper table.tribe-mini-calendar thead,
@@ -2836,10 +2885,11 @@ div#customForm p {
 
 .pagination li {
     padding: 0;
-    margin: 0;
+    margin-right: 5px;
     float: left;
     display: inline;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 35px
 }
 
 .pagination a,
@@ -2849,17 +2899,18 @@ div#customForm p {
     line-height: 1em;
     font-size: 1em;
     font-weight: 400;
-    padding: .75em;
+    padding: 10px;
     min-width: 1em;
     display: none;
-    color: #f16465
+    color: #fff;
+    background: #f16465
 }
 
 .pagination a:focus,
 .pagination a:hover,
 .pagination span:focus,
 .pagination span:hover {
-    color: #f16465
+    color: #fff
 }
 
 .pagination a.next,
@@ -2875,13 +2926,9 @@ div#customForm p {
     vertical-align: bottom
 }
 
-.pagination a.prev:before {
-    content: "\73"
-}
+.pagination a.prev:before {}
 
-.pagination a.next:after {
-    content: "\6e"
-}
+.pagination a.next:after {}
 
 .pagination .current {
     cursor: default;

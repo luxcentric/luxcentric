@@ -37,7 +37,7 @@ get_header( 'shop' ); ?>
 
 		foreach ($cat as $categoria) {
 			if($categoria->parent == 0) {
-   				echo '<h1 class="single-title">' . $categoria->name . '</h1>';
+   				//echo '<h1 class="single-title">' . $categoria->name . '</h1>';
 			}
 		}
 	?>

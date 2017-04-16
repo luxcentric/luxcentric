@@ -58,10 +58,6 @@ $event_id = get_the_ID();
 		<?php if ( tribe_get_cost() ) : ?>
 			<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
 		<?php endif; ?>
-
-		<div class="small-btn">
-			<a href="#buy-tickets">BUY NOW!<span class="iconic"><i class="icon-right-arrow"></i></span></a>
-		</div>
 	</div>	
 	</figcaption>
 </figure>
