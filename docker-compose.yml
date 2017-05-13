@@ -7,9 +7,30 @@ services:
       - 443:443
     volumes:
       - ./data:/data
+      - ./wp-content/uploads:/app/wp-content/uploads
+      - ./wp-content/themes/Luxcentric:/app/wp-content/themes/Luxcentric
+      - ./wp-content/plugins/woocommerce:/app/wp-content/plugins/woocommerce
+      - ./wp-content/plugins/woothemes-sensei:/app/wp-content/plugins/woothemes-sensei
+      - ./wp-content/plugins/woothemes-updater:/app/wp-content/plugins/woothemes-updater
+      - ./wp-content/plugins/favicon-by-realfavicongenerator:/app/wp-content/plugins/favicon-by-realfavicongenerator
+      - ./wp-content/plugins/popup-maker:/app/wp-content/plugins/popup-maker
     environment:
       DB_NAME: wordpress
       DB_PASS: root
+      PLUGINS: >-
+          [local]woocommerce,
+          [local]woothemes-sensei,
+          [local]woothemes-updater,
+          [local]favicon-by-realfavicongenerator,
+          [local]popup-maker
+      THEMES: >-
+          [local]Luxcentric
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 22222:80
   db:
     image: mariadb:10 # or mysql:5.7
     volumes:
@@ -17,4 +38,4 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
 volumes:
-  data:
+  data: {}

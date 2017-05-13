@@ -32,7 +32,7 @@
     "vinyl": "^0.5.1"
   },
   "gulp": {
-    "theme": "",
+    "theme": "Luxcentric",
     "productionAssetURL": "",
     "aws": {
       "params": {
@@ -41,5 +41,9 @@
       "accessKeyId": "",
       "secretAccessKey": ""
     }
-  }
+  },
+  "main": "gulpfile.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
