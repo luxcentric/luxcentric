@@ -56,3 +56,4 @@ temp/
 
 *.codekit
 *.scssc
+library/scss/node_modules

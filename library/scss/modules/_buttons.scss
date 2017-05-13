@@ -38,6 +38,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   padding: 0px;
   outline: none;
   cursor: pointer;
+  border-radius: 16px;
   //@include transition(background-color 0.14s ease-in-out);
 
   // hovering on the btn
@@ -68,6 +69,9 @@ and it will create a button dependant on those variables.
 
 .xsmall-btn {
   @extend %btn;
+  font-size: 0.8em;
+  padding: 3px 8px;
+  font-weight: auto;
 }
 
 .small-btn {
