@@ -30,13 +30,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   font-family: $montserrat;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: transparent !important;
-  color: $salmon !important;
+  background-color: $salmon !important;
+  color: $white !important;
   font-size: 1em;
   font-weight: normal;
   line-height: 1;
-  padding: 0;
-  border: 0;
+  padding: 0px;
   outline: none;
   cursor: pointer;
   //@include transition(background-color 0.14s ease-in-out);
@@ -61,11 +60,14 @@ and it will create a button dependant on those variables.
 
 .woo-btn {
   @extend %btn;
-  padding: 0 1em 0 0 !important;
-  background-image: url(../images/assets/backgrounds/right-arrow.svg) !important;
+  padding: 6px 1em !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: 18px 18px;
+}
+
+.xsmall-btn {
+  @extend %btn;
 }
 
 .small-btn {
@@ -74,6 +76,7 @@ and it will create a button dependant on those variables.
   .iconic {
     display: inline-block;
     vertical-align: middle;
+    padding-top: 4px;
 
     .icon-left-arrow:before, .icon-right-arrow:before {
       font-size: 2.5rem;
@@ -89,6 +92,7 @@ and it will create a button dependant on those variables.
   .iconic {
     display: inline-block;
     vertical-align: middle;
+    padding-top: 4px;
 
     .icon-right-arrow:before {
 /*      font-size: 2.5rem;
@@ -102,9 +106,10 @@ and it will create a button dependant on those variables.
   @extend %btn; // here we load the btn defaults
   font-size: 1.52em;
   line-height: 1;
+  padding: 6px 30px;
 
   .iconic {
-    display: inline-block;
+    display: none;
     vertical-align: middle;
 
     .icon-right-arrow:before {

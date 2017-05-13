@@ -257,7 +257,7 @@ FONT ICONS
 	.icon-male:before { content: "\6b"; }
 	.icon-member:before { content: "\6c"; }
 	.icon-phone:before { content: "\6d"; }
-	.icon-right-arrow:before { content: "\6e"; color: $salmon; }
+	.icon-right-arrow:before { content: "\6e"; color: $salmon; display: none; }
 	.icon-strategy:before { content: "\6f"; }
 	.icon-tech-support:before { content: "\70"; }
 	.icon-training:before { content: "\71"; }
@@ -1626,13 +1626,17 @@ TRIBE EVENTS CALENDAR STYLES
 				width: 100%;
 
 				.tribe-events-read-more {
-					color: $salmon;
+					color: $white;
 					text-transform: uppercase;
+					background: $salmon;
+					padding: 8px;
+					border-radius: 18px;
 
 					.iconic .icon-right-arrow:before { 
 						font-size: 1.25rem;
 						line-height: 1;
 						vertical-align: middle;
+						display: none;
 					}
 				}
 			}
@@ -1643,7 +1647,7 @@ TRIBE EVENTS CALENDAR STYLES
 
 			.tribe-events-sub-nav li a {
 				background: transparent;
-				color: $salmon;
+				color: $white;
 			}
 		}
 
@@ -1881,10 +1885,11 @@ PAGE NAVI STYLES
 
     li {
       padding: 0;
-      margin: 0;
+      margin-right: 5px;
       float: left;
       display: inline;
       overflow: hidden;
+      border-radius: 35px;
       /*border-right: 1px solid $teal; */
     }
 
@@ -1895,13 +1900,14 @@ PAGE NAVI STYLES
       line-height: 1em;
       font-size: 1em;
       font-weight: normal;
-      padding: 0.75em;
+      padding: 10px;
       min-width: 1em;
       display: none;
-      color: $salmon;
+      color: $white;
+      background: $salmon;
 
       &:hover, &:focus {
-      	color: $salmon;
+      	color: $white;
       }
     }
 
@@ -1910,7 +1916,6 @@ PAGE NAVI STYLES
     	display: inline-block;
       	font-family: $luxcentric;
       	font-size: 2.5rem;
-      	content: "\73";
       	vertical-align: bottom;
     }
 
@@ -1918,7 +1923,6 @@ PAGE NAVI STYLES
     	display: inline-block;
       	font-family: $luxcentric;
       	font-size: 2.5rem;
-      	content: "\6e";
       	vertical-align: bottom;
     }
 
