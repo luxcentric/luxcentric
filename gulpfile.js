@@ -13,7 +13,7 @@ var collect      = require('gulp-rev-collector');
 var imagemin     = require('gulp-imagemin');
 var pngquant     = require('imagemin-pngquant');
 var uglify       = require('gulp-uglify');
-var minifyCss    = require('gulp-minify-css');
+var cleanCss     = require('gulp-clean-css');
 var awspublish   = require('gulp-awspublish');
 var autoprefixer = require('gulp-autoprefixer');
 
@@ -22,7 +22,7 @@ var config = require('./package.json').gulp;
 var themePath = 'wp-content/themes/' + config.theme;
 var distPath  = themePath + '/dist';
 var distPathAbsolute = '/' + distPath;
-var assetPath = themePath + '/assets';
+var assetPath = themePath + '/library';
 
 gulp.task(
   'default',
@@ -82,7 +82,7 @@ gulp.task('compile-styles', function () {
 
 gulp.task('optimize-styles', function () {
   return gulp.src(distPath + '/css/style.css')
-    .pipe(minifyCss())
+    .pipe(cleanCss())
     .pipe(gulp.dest(distPath + '/css'));
 });
 

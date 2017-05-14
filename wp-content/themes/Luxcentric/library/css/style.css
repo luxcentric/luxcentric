@@ -920,25 +920,25 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.woo-btn, .woocommerce a.button, .woocommerce button.button, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button, .woocommerce input.button.alt, .woocommerce input#submit, .woocommerce input[type="submit"], .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button, .woocommerce-page input.button.alt, .woocommerce-page input#submit, .woocommerce-page input[type="submit"], .sensei a.button, .sensei button.button, .sensei a.button.alt, .sensei button.button.alt, .sensei input.button, .sensei input.button.alt, .sensei input#submit, .sensei input[type="submit"], .sensei .sensei-message.tick a.next-lesson, .small-btn, .small-white-btn, .large-btn, .comment-reply-link, #submit {
+.woo-btn, .woocommerce a.button, .woocommerce button.button, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button, .woocommerce input.button.alt, .woocommerce input#submit, .woocommerce input[type="submit"], .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button, .woocommerce-page input.button.alt, .woocommerce-page input#submit, .woocommerce-page input[type="submit"], .sensei a.button, .sensei button.button, .sensei a.button.alt, .sensei button.button.alt, .sensei input.button, .sensei input.button.alt, .sensei input#submit, .sensei input[type="submit"], .sensei .sensei-message.tick a.next-lesson, .xsmall-btn, .small-btn, .small-white-btn, .large-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: transparent !important;
-  color: #f16465 !important;
+  background-color: #f16465 !important;
+  color: #fff !important;
   font-size: 1em;
   font-weight: normal;
   line-height: 1;
-  padding: 0;
-  border: 0;
+  padding: 0px;
   outline: none;
-  cursor: pointer; }
-  .woo-btn:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce input#submit:hover, .woocommerce input[type="submit"]:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover, .woocommerce-page input#submit:hover, .woocommerce-page input[type="submit"]:hover, .sensei a.button:hover, .sensei button.button:hover, .sensei input.button:hover, .sensei input#submit:hover, .sensei input[type="submit"]:hover, .sensei .sensei-message.tick a.next-lesson:hover, .small-btn:hover, .small-white-btn:hover, .large-btn:hover, .comment-reply-link:hover, #submit:hover, .woo-btn:focus, .woocommerce a.button:focus, .woocommerce button.button:focus, .woocommerce input.button:focus, .woocommerce input#submit:focus, .woocommerce input[type="submit"]:focus, .woocommerce-page a.button:focus, .woocommerce-page button.button:focus, .woocommerce-page input.button:focus, .woocommerce-page input#submit:focus, .woocommerce-page input[type="submit"]:focus, .sensei a.button:focus, .sensei button.button:focus, .sensei input.button:focus, .sensei input#submit:focus, .sensei input[type="submit"]:focus, .sensei .sensei-message.tick a.next-lesson:focus, .small-btn:focus, .small-white-btn:focus, .large-btn:focus, .comment-reply-link:focus, #submit:focus {
+  cursor: pointer;
+  border-radius: 16px; }
+  .woo-btn:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce input#submit:hover, .woocommerce input[type="submit"]:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover, .woocommerce-page input#submit:hover, .woocommerce-page input[type="submit"]:hover, .sensei a.button:hover, .sensei button.button:hover, .sensei input.button:hover, .sensei input#submit:hover, .sensei input[type="submit"]:hover, .sensei .sensei-message.tick a.next-lesson:hover, .xsmall-btn:hover, .small-btn:hover, .small-white-btn:hover, .large-btn:hover, .comment-reply-link:hover, #submit:hover, .woo-btn:focus, .woocommerce a.button:focus, .woocommerce button.button:focus, .woocommerce input.button:focus, .woocommerce input#submit:focus, .woocommerce input[type="submit"]:focus, .woocommerce-page a.button:focus, .woocommerce-page button.button:focus, .woocommerce-page input.button:focus, .woocommerce-page input#submit:focus, .woocommerce-page input[type="submit"]:focus, .sensei a.button:focus, .sensei button.button:focus, .sensei input.button:focus, .sensei input#submit:focus, .sensei input[type="submit"]:focus, .sensei .sensei-message.tick a.next-lesson:focus, .xsmall-btn:focus, .small-btn:focus, .small-white-btn:focus, .large-btn:focus, .comment-reply-link:focus, #submit:focus {
     color: #ef5152;
     text-decoration: none; }
-  .woo-btn:active, .woocommerce a.button:active, .woocommerce button.button:active, .woocommerce input.button:active, .woocommerce input#submit:active, .woocommerce input[type="submit"]:active, .woocommerce-page a.button:active, .woocommerce-page button.button:active, .woocommerce-page input.button:active, .woocommerce-page input#submit:active, .woocommerce-page input[type="submit"]:active, .sensei a.button:active, .sensei button.button:active, .sensei input.button:active, .sensei input#submit:active, .sensei input[type="submit"]:active, .sensei .sensei-message.tick a.next-lesson:active, .small-btn:active, .small-white-btn:active, .large-btn:active, .comment-reply-link:active, #submit:active {
+  .woo-btn:active, .woocommerce a.button:active, .woocommerce button.button:active, .woocommerce input.button:active, .woocommerce input#submit:active, .woocommerce input[type="submit"]:active, .woocommerce-page a.button:active, .woocommerce-page button.button:active, .woocommerce-page input.button:active, .woocommerce-page input#submit:active, .woocommerce-page input[type="submit"]:active, .sensei a.button:active, .sensei button.button:active, .sensei input.button:active, .sensei input#submit:active, .sensei input[type="submit"]:active, .sensei .sensei-message.tick a.next-lesson:active, .xsmall-btn:active, .small-btn:active, .small-white-btn:active, .large-btn:active, .comment-reply-link:active, #submit:active {
     top: 1px; }
 
 /*
@@ -947,15 +947,20 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 .woo-btn, .woocommerce a.button, .woocommerce button.button, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button, .woocommerce input.button.alt, .woocommerce input#submit, .woocommerce input[type="submit"], .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page a.button.alt, .woocommerce-page button.button.alt, .woocommerce-page input.button, .woocommerce-page input.button.alt, .woocommerce-page input#submit, .woocommerce-page input[type="submit"], .sensei a.button, .sensei button.button, .sensei a.button.alt, .sensei button.button.alt, .sensei input.button, .sensei input.button.alt, .sensei input#submit, .sensei input[type="submit"], .sensei .sensei-message.tick a.next-lesson {
-  padding: 0 1em 0 0 !important;
-  /*background-image: url(../images/assets/backgrounds/right-arrow.svg) !important;*/
+  padding: 6px 1em !important;
   background-repeat: no-repeat !important;
   background-position: right center !important;
   background-size: 18px 18px; }
 
+.xsmall-btn {
+  font-size: 0.8em;
+  padding: 3px 8px;
+  font-weight: auto; }
+
 .small-btn .iconic {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding-top: 4px; }
   .small-btn .iconic .icon-left-arrow:before, .small-btn .iconic .icon-right-arrow:before {
     font-size: 2.5rem;
     line-height: 1; }
@@ -964,7 +969,8 @@ and it will create a button dependant on those variables.
   color: #fff !important; }
   .small-white-btn .iconic {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding-top: 4px; }
     .small-white-btn .iconic .icon-right-arrow:before {
       /*      font-size: 2.5rem;
             line-height: 1.4; */
@@ -972,9 +978,10 @@ and it will create a button dependant on those variables.
 
 .large-btn {
   font-size: 1.52em;
-  line-height: 1; }
+  line-height: 1;
+  padding: 6px 30px; }
   .large-btn .iconic {
-    display: inline-block;
+    display: none;
     vertical-align: middle; }
     .large-btn .iconic .icon-right-arrow:before {
       font-size: 3.5rem;
@@ -1536,7 +1543,8 @@ FONT ICONS
   content: "\6d"; }
 .iconic .icon-right-arrow:before {
   content: "\6e";
-  color: #f16465; }
+  color: #f16465;
+  display: none; }
 .iconic .icon-strategy:before {
   content: "\6f"; }
 .iconic .icon-tech-support:before {
@@ -1869,19 +1877,19 @@ POSTS & CONTENT STYLES
     padding: 0;
     font-style: italic; }
 
-.fp-list {
-  .icon-stack-margin-bottom: 0.5em; }
-  .fp-list div.col {
-    margin-bottom: 2em; }
-    .fp-list div.col:last-child {
-      margin-bottom: 0; }
-  .fp-list h4 {
-    text-align: center;
-    line-height: 1.2;
-    margin-top: 0.5em; }
-  .fp-list p {
-    text-align: left;
-    margin-bottom: 1em; }
+.fp-list div.col {
+  margin-bottom: 2em; }
+  .fp-list div.col:last-child {
+    margin-bottom: 0; }
+.fp-list .icon-stack {
+  margin-bottom: 0.5em; }
+.fp-list h4 {
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 0.5em; }
+.fp-list p {
+  text-align: left;
+  margin-bottom: 1em; }
 
 .about-us h2 {
   margin-bottom: 0.5em;
@@ -2481,17 +2489,21 @@ TRIBE EVENTS CALENDAR STYLES
   #tribe-events-content-wrapper .tribe-events-list .tribe-events-loop .tribe-events-list-event-description {
     width: 100%; }
     #tribe-events-content-wrapper .tribe-events-list .tribe-events-loop .tribe-events-list-event-description .tribe-events-read-more {
-      color: #f16465;
-      text-transform: uppercase; }
+      color: #fff;
+      text-transform: uppercase;
+      background: #f16465;
+      padding: 8px;
+      border-radius: 18px; }
       #tribe-events-content-wrapper .tribe-events-list .tribe-events-loop .tribe-events-list-event-description .tribe-events-read-more .iconic .icon-right-arrow:before {
         font-size: 1.25rem;
         line-height: 1;
-        vertical-align: middle; }
+        vertical-align: middle;
+        display: none; }
   #tribe-events-content-wrapper .tribe-events-list #tribe-events-footer {
     border-top: #00657e !important; }
     #tribe-events-content-wrapper .tribe-events-list #tribe-events-footer .tribe-events-sub-nav li a {
       background: transparent;
-      color: #f16465; }
+      color: #fff; }
 
 .tribe-mini-calendar-wrapper {
   margin-top: 10px; }
@@ -2649,10 +2661,11 @@ PAGE NAVI STYLES
     border-radius: 3px; }
   .pagination li {
     padding: 0;
-    margin: 0;
+    margin-right: 5px;
     float: left;
     display: inline;
     overflow: hidden;
+    border-radius: 35px;
     /*border-right: 1px solid $teal; */ }
   .pagination a, .pagination span {
     margin: 0;
@@ -2661,25 +2674,24 @@ PAGE NAVI STYLES
     line-height: 1em;
     font-size: 1em;
     font-weight: normal;
-    padding: 0.75em;
+    padding: 10px;
     min-width: 1em;
     display: none;
-    color: #f16465; }
+    color: #fff;
+    background: #f16465; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      color: #f16465; }
+      color: #fff; }
   .pagination a.prev, .pagination a.next {
     display: block !important; }
   .pagination a.prev:before {
     display: inline-block;
     font-family: "luxcentric";
     font-size: 2.5rem;
-    content: "\73";
     vertical-align: bottom; }
   .pagination a.next:after {
     display: inline-block;
     font-family: "luxcentric";
     font-size: 2.5rem;
-    content: "\6e";
     vertical-align: bottom; }
   .pagination .current {
     cursor: default;
@@ -4119,4 +4131,4 @@ be set to display none.
   nav {
     display: none; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=out.css.map */
