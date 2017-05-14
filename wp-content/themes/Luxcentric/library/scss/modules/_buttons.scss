@@ -75,7 +75,6 @@ and it will create a button dependant on those variables.
 }
 
 .small-btn {
-  @extend %btn;
 
   .iconic {
     display: inline-block;
