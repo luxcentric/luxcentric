@@ -56,9 +56,9 @@ temp/
 
 *.codekit
 *.scssc
-library/scss/node_modules
 data/database.sql
-wp-content/uploads
+!wp-content/uploads/
+wp-content/uploads/*
 !wp-content/.gitkeep
 wp-content/plugins/woocommerce
 wp-content/plugins/woothemes-sensei
