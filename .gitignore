@@ -60,12 +60,17 @@ data/database.sql
 !wp-content/uploads/
 wp-content/uploads/*
 !wp-content/.gitkeep
+
+############
+## Plugins
+############
+
 wp-content/plugins/woocommerce
 wp-content/plugins/woothemes-sensei
 wp-content/plugins/woothemes-updater
 wp-content/plugins/favicon-by-realfavicongenerator
 wp-content/plugins/popup-maker
+wp-content/plugins/testimonials-widget-premium
 node_modules
 wp-content/themes/Luxcentric/library/scss/style.css
 wp-content/themes/Luxcentric/library/scss/style.css.map
-
