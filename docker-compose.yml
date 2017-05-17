@@ -4,8 +4,9 @@ services:
     image: visiblevc/wordpress:latest
     ports:
       - 8080:80
-      - 443:443
+      - 4040:443
     volumes:
+      - ./certs:/certs
       - ./data:/data
       - ./wp-content/uploads:/app/wp-content/uploads
       - ./wp-content/themes/Luxcentric:/app/wp-content/themes/Luxcentric
