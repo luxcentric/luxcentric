@@ -54,7 +54,9 @@ temp/
 .svn
 *.codekit
 *.scssc
-data/database.sql
+!data/
+data/*
+!data/.gitkeep
 !wp-content/uploads/
 wp-content/uploads/*
 !wp-content/.gitkeep

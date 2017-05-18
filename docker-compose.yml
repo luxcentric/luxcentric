@@ -28,7 +28,8 @@ services:
           [local]testimonials-widget-premium
       THEMES: >-
           [local]Luxcentric
-  phpmyadmin:
+      SEARCH_REPLACE: luxcentric.com,localhost:4040
+  phpmyadmin:   
     image: phpmyadmin/phpmyadmin
     environment:
       MYSQL_ROOT_PASSWORD: root
