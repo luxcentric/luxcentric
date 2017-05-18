@@ -62,7 +62,7 @@ wp-content/uploads/*
 !wp-content/.gitkeep
 !certs/
 certs/*
-!certs/.gitkeep
+!certs/make-certs.sh
 wp-content/uploads/*
 !wp-content/.gitkeep
 wp-content/themes/Luxcentric/library/scss/style.css
