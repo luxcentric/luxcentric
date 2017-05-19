@@ -73,10 +73,17 @@ node_modules
 ## Plugins
 ############
 
+wp-content/plugins/duplicate-tec-event
+wp-content/plugins/events-calendar-pro
+wp-content/plugins/event-tickets
+wp-content/plugins/event-tickets-plus
 wp-content/plugins/favicon-by-realfavicongenerator
 wp-content/plugins/gravityforms
 wp-content/plugins/popup-maker
+wp-content/plugins/reveal-ids-for-wp-admin-25
+wp-content/plugins/scalable-vector-graphics-svg
 wp-content/plugins/testimonials-widget-premium
+wp-content/plugins/the-events-calendar
 wp-content/plugins/woocommerce
 wp-content/plugins/woothemes-sensei
 wp-content/plugins/woothemes-updater
