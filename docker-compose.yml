@@ -22,8 +22,12 @@ services:
       - ./wp-content/plugins/testimonials-widget-premium:/app/wp-content/plugins/testimonials-widget-premium
       - ./wp-content/plugins/the-events-calendar:/app/wp-content/plugins/the-events-calendar
       - ./wp-content/plugins/woocommerce:/app/wp-content/plugins/woocommerce
+      - ./wp-content/plugins/woocommerce-memberships:/app/wp-content/plugins/woocommerce-memberships
+      - ./wp-content/plugins/woocommerce-simple-registration:/app/wp-content/plugins/woocommerce-simple-registration
       - ./wp-content/plugins/woothemes-sensei:/app/wp-content/plugins/woothemes-sensei
       - ./wp-content/plugins/woothemes-updater:/app/wp-content/plugins/woothemes-updater
+      - ./wp-content/plugins/wp-leads-builder-any-crm-pro:/app/wp-content/plugins/wp-leads-builder-any-crm-pro
+      - ./wp-content/plugins/wp-smushit:/app/wp-content/plugins/wp-smushit
     environment:
       DB_NAME: wordpress
       DB_PASS: root
@@ -40,8 +44,12 @@ services:
           [local]testimonials-widget-premium,
           [local]the-events-calendar,
           [local]woocommerce,
+          [local]woocommerce-memberships,
+          [local]woocommerce-simple-registration,
           [local]woothemes-sensei,
-          [local]woothemes-updater
+          [local]woothemes-updater,
+          [local]wp-leads-builder-any-crm-pro,
+          [local]wp-smushit
       THEMES: >-
           [local]Luxcentric
       SEARCH_REPLACE: luxcentric.com,localhost:4040
