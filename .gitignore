@@ -69,26 +69,6 @@ wp-content/themes/Luxcentric/library/scss/style.css
 wp-content/themes/Luxcentric/library/scss/style.css.map
 node_modules
 
-############
-## Plugins
-############
-
-wp-content/plugins/duplicate-tec-event
-wp-content/plugins/events-calendar-pro
-wp-content/plugins/event-tickets
-wp-content/plugins/event-tickets-plus
-wp-content/plugins/favicon-by-realfavicongenerator
-wp-content/plugins/gravityforms
-wp-content/plugins/popup-maker
-wp-content/plugins/reveal-ids-for-wp-admin-25
-wp-content/plugins/scalable-vector-graphics-svg
-wp-content/plugins/testimonials-widget-premium
-wp-content/plugins/the-events-calendar
-wp-content/plugins/woocommerce
-wp-content/plugins/woocommerce-memberships
-wp-content/plugins/woocommerce-simple-registration
-wp-content/plugins/woothemes-sensei
-wp-content/plugins/woothemes-updater
-wp-content/plugins/wp-leads-builder-any-crm-pro
-wp-content/plugins/wp-smushit
+wp-content/plugins/*
+!wp-content/.gitkeep
 
