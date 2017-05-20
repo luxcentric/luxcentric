@@ -364,6 +364,12 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
+// hide "Your theme does not declare Sensei support message
+add_action( 'after_setup_theme', 'declare_sensei_support' );
+function declare_sensei_support() {
+    add_theme_support( 'sensei' );
+}
+
 global $woothemes_sensei;
 remove_action( 'sensei_before_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper' ), 10 );
 remove_action( 'sensei_after_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper_end' ), 10 );
