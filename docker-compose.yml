@@ -15,8 +15,8 @@ services:
       - ./wp-content/plugins/event-tickets:/app/wp-content/plugins/event-tickets
       - ./wp-content/plugins/event-tickets-plus:/app/wp-content/plugins/event-tickets-plus
       - ./wp-content/plugins/favicon-by-realfavicongenerator:/app/wp-content/plugins/favicon-by-realfavicongenerator
-      - ./wp-content/plugins/gravityforms_2.2.1.2:/app/wp-content/plugins/gravityforms
-      - ./wp-content/plugins/popup-maker:/app/wp-content/plugins/popup-maker
+      - ./wp-content/plugins/gravityforms_2.2.2:/app/wp-content/plugins/gravityforms
+      - ./wp-content/plugins/popup-maker_1.5.8:/app/wp-content/plugins/popup-maker
       - ./wp-content/plugins/reveal-ids-for-wp-admin-25:/app/wp-content/plugins/reveal-ids-for-wp-admin-25
       - ./wp-content/plugins/scalable-vector-graphics-svg:/app/wp-content/plugins/scalable-vector-graphics-svg
       - ./wp-content/plugins/testimonials-widget-premium:/app/wp-content/plugins/testimonials-widget-premium
