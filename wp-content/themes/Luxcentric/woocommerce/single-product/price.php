@@ -13,7 +13,7 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates
- * @version 2.4.9
+ * @version 3.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -21,22 +21,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
+
 ?>
+<span class="price"><?php echo $product->get_price_html(); ?></span>
 
-<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+<?php
+	global $post;
 
-	<span class="price"><?php echo $product->get_price_html(); ?></span>
+	$session_length = $product->get_attribute( 'length' );
 
-	<?php
-		global $post;
-
-		$session_length = $product->get_attribute( 'length' );
-
-		echo '<span class="attributes"> | Length: ' . $session_length . '</span>';
-	?>
-
-	<meta itemprop="price" content="<?php echo esc_attr( $product->get_display_price() ); ?>" />
-	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" />
-	<link itemprop="availability" href="http://schema.org/<?php echo $product->is_in_stock() ? 'InStock' : 'OutOfStock'; ?>" />
-
-</div>
+	echo '<span class="attributes"> | Length: ' . $session_length . '</span>';
+?>

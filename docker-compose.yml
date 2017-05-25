@@ -10,24 +10,7 @@ services:
       - ./data:/data
       - ./wp-content/uploads:/app/wp-content/uploads
       - ./wp-content/themes/Luxcentric:/app/wp-content/themes/Luxcentric
-      - ./wp-content/plugins/duplicate-tec-event:/app/wp-content/plugins/duplicate-tec-event
-      - ./wp-content/plugins/events-calendar-pro:/app/wp-content/plugins/events-calendar-pro
-      - ./wp-content/plugins/event-tickets:/app/wp-content/plugins/event-tickets
-      - ./wp-content/plugins/event-tickets-plus:/app/wp-content/plugins/event-tickets-plus
-      - ./wp-content/plugins/favicon-by-realfavicongenerator:/app/wp-content/plugins/favicon-by-realfavicongenerator
-      - ./wp-content/plugins/gravityforms:/app/wp-content/plugins/gravityforms
-      - ./wp-content/plugins/popup-maker:/app/wp-content/plugins/popup-maker
-      - ./wp-content/plugins/reveal-ids-for-wp-admin-25:/app/wp-content/plugins/reveal-ids-for-wp-admin-25
-      - ./wp-content/plugins/scalable-vector-graphics-svg:/app/wp-content/plugins/scalable-vector-graphics-svg
-      - ./wp-content/plugins/testimonials-widget-premium:/app/wp-content/plugins/testimonials-widget-premium
-      - ./wp-content/plugins/the-events-calendar:/app/wp-content/plugins/the-events-calendar
-      - ./wp-content/plugins/woocommerce:/app/wp-content/plugins/woocommerce
-      - ./wp-content/plugins/woocommerce-memberships:/app/wp-content/plugins/woocommerce-memberships
-      - ./wp-content/plugins/woocommerce-simple-registration:/app/wp-content/plugins/woocommerce-simple-registration
-      - ./wp-content/plugins/woothemes-sensei:/app/wp-content/plugins/woothemes-sensei
-      - ./wp-content/plugins/woothemes-updater:/app/wp-content/plugins/woothemes-updater
-      - ./wp-content/plugins/wp-leads-builder-any-crm-pro:/app/wp-content/plugins/wp-leads-builder-any-crm-pro
-      - ./wp-content/plugins/wp-smushit:/app/wp-content/plugins/wp-smushit
+      - ./wp-content/plugins:/app/wp-content/plugins
     environment:
       DB_NAME: wordpress
       DB_PASS: root
