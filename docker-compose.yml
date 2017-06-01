@@ -21,6 +21,7 @@ services:
           [local]event-tickets-plus,
           [local]favicon-by-realfavicongenerator,
           [local]gravityforms,
+          [local]luxcentric-plugin,
           [local]popup-maker,
           [local]reveal-ids-for-wp-admin-25,
           [local]scalable-vector-graphics-svg,

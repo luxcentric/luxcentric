@@ -59,16 +59,17 @@ data/*
 !data/.gitkeep
 !wp-content/uploads/
 wp-content/uploads/*
-!wp-content/.gitkeep
+!wp-content/uploads/.gitkeep
 !certs/
 certs/*
 !certs/make-certs.sh
-wp-content/uploads/*
-!wp-content/.gitkeep
 wp-content/themes/Luxcentric/library/scss/style.css
 wp-content/themes/Luxcentric/library/scss/style.css.map
 node_modules
 
+!wp-content/plugins/
 wp-content/plugins/*
+!wp-content/plugins/luxcentric-plugin
+
 !wp-content/.gitkeep
 
