@@ -32,7 +32,6 @@ services:
           [local]woocommerce-simple-registration,
           [local]woothemes-sensei,
           [local]woothemes-updater,
-          [local]wp-leads-builder-any-crm-pro,
           [local]wp-smushit
       THEMES: >-
           [local]Luxcentric
