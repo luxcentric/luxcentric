@@ -380,4 +380,11 @@ function bones_filter_ptags_on_images($content){
 	return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
 }
 
+// This removes the annoying […] to a Read More link
+function bones_excerpt_more($more) {
+	global $post;
+	// edit here if you like
+	return '<span>... </span><div class="small-btn"><a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read ', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'READ MORE', 'bonestheme' ) .'<span class="iconic"><i class="icon-right-arrow"></i></span></a></div>';
+}
+
 ?>
