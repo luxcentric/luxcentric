@@ -3131,6 +3131,10 @@ GRAVITY FORM STYLES
   height: auto;
   font-size: 16px; }
 
+.woocommerce span.onsale {
+  padding: 0.6em;
+  position: relative; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
