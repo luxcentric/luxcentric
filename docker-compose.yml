@@ -28,6 +28,7 @@ services:
           [local]testimonials-widget-premium,
           [local]the-events-calendar,
           [local]woocommerce,
+          [local]woocommerce-follow-up-emails,
           [local]woocommerce-memberships,
           [local]woocommerce-simple-registration,
           [local]woothemes-sensei,
