@@ -1,7 +1,7 @@
-version: '2'
+version: '3'
 services:
   wordpress:
-    image: visiblevc/wordpress:0.14.0-php7.0
+    image: visiblevc/wordpress:0.15.2-php7.0
     ports:
       - 8080:80
       - 4040:443
@@ -14,29 +14,8 @@ services:
     environment:
       DB_NAME: wordpress
       DB_PASS: root
-      PLUGINS: >-
-          [local]duplicate-tec-event,
-          [local]events-calendar-pro,
-          [local]event-tickets,
-          [local]event-tickets-plus,
-          [local]favicon-by-realfavicongenerator,
-          [local]gravityforms,
-          [local]luxcentric-plugin,
-          [local]popup-maker,
-          [local]reveal-ids-for-wp-admin-25,
-          [local]scalable-vector-graphics-svg,
-          [local]testimonials-widget-premium,
-          [local]the-events-calendar,
-          [local]woocommerce,
-          [local]woocommerce-follow-up-emails,
-          [local]woocommerce-memberships,
-          [local]woocommerce-simple-registration,
-          [local]woothemes-sensei,
-          [local]woothemes-updater,
-          [local]wp-smushit
-      THEMES: >-
-          [local]Luxcentric
-      SEARCH_REPLACE: luxcentric.com,localhost:4040
+      URL_REPLACE: luxcentric.com,localhost:4040
+      WP_DEBUG: 'true'
   phpmyadmin:   
     image: phpmyadmin/phpmyadmin
     environment:

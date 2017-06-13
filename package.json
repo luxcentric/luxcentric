@@ -1,6 +1,6 @@
 {
-  "name": "visible-wordpress",
-  "version": "0.14.0",
+  "name": "luxcentric",
+  "version": "1.00.0",
   "scripts": {
     "wp": "wpcmd() { docker exec $(docker ps -lq) /bin/bash -c \"sudo -u www-data wp $(echo $@)\"; };wpcmd "
   },
@@ -43,7 +43,7 @@
     }
   },
   "main": "gulpfile.js",
-  "author": "",
+  "author": "Gary Ritchie",
   "license": "ISC",
   "description": ""
 }
