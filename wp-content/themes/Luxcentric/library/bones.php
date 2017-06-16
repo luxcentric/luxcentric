@@ -91,7 +91,8 @@ function bones_rss_version() { return ''; }
 
 // remove WP version from scripts
 function bones_remove_wp_ver_css_js( $src ) {
-	if ( strpos( $src, 'ver=' ) )
+	global $wp_version;
+	if ( strpos( $src, 'ver=' . $wp_version ) )
 		$src = remove_query_arg( 'ver', $src );
 	return $src;
 }
@@ -132,7 +133,7 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
 		// register main stylesheet
-		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.min.css', array(), '', 'all' );
+		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.min.css', array(), '1.0.0', 'all' );
 
 		// ie-only style sheet
 		wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );

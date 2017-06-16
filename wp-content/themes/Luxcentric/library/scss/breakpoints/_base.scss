@@ -837,27 +837,25 @@ POSTS & CONTENT STYLES
 
 		.testimonials-widget-testimonial {
 			.image {
-				a {
-					display: inline-block;
-					margin-right: 0.75em;
-					padding-right: 100px;
-					height: 130px;
-					width: auto;
-			        background: url(../images/assets/backgrounds/testimonialBg.png) no-repeat right center;
+				display: inline-block;
+				margin-right: 0.75em;
+				padding-right: 100px;
+				height: 130px;
+				width: auto;
+				background: url(../images/assets/backgrounds/testimonialBg.png) no-repeat right center;
 
-					img {
-						margin: 0 !important;	
-				      	width: 130px;
-						height: 130px;
-						object-fit: cover;
-						overflow: hidden;
-						border: solid 5px $white;
-				       -webkit-border-radius: 50%;
-				       -moz-border-radius: 50%;
-				        border-radius: 50%;
-				        background-color: $white; // hide gap between image and border
-				    }
-				} 					
+				img {
+					margin: 0 !important;	
+					width: 130px;
+					height: 130px;
+					object-fit: cover;
+					overflow: hidden;
+					border: solid 5px $white;
+					-webkit-border-radius: 50%;
+					-moz-border-radius: 50%;
+					border-radius: 50%;
+					background-color: $white; // hide gap between image and border
+				}
 			}
 
 			blockquote { 

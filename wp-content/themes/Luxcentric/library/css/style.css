@@ -1923,14 +1923,14 @@ POSTS & CONTENT STYLES
 
 .testimonials .testimonials-widget-testimonials {
   margin-top: 1.5em; }
-  .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial .image a {
+  .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial .image {
     display: inline-block;
     margin-right: 0.75em;
     padding-right: 100px;
     height: 130px;
     width: auto;
     background: url(../images/assets/backgrounds/testimonialBg.png) no-repeat right center; }
-    .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial .image a img {
+    .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial .image img {
       margin: 0 !important;
       width: 130px;
       height: 130px;
