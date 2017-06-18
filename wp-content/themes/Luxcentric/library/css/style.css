@@ -2023,6 +2023,9 @@ POSTS & CONTENT STYLES
   float: right !important;
   width: auto !important; }
 
+p.woocommerce.add_to_cart_inline {
+  border: 0 !important; }
+
 .woocommerce .woocommerce form.login, .woocommerce-page .woocommerce form.login {
   border: none; }
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {

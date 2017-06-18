@@ -954,6 +954,10 @@ POSTS & CONTENT STYLES
 	width: auto !important;
 }
 
+p.woocommerce.add_to_cart_inline {
+    border: 0 !important;
+}
+
 .woocommerce, .woocommerce-page {
 	.woocommerce form.login {
 		border: none;
