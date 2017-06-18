@@ -442,8 +442,8 @@ function sv_free_checkout_fields() {
 }
 add_action( 'wp', 'sv_free_checkout_fields' );
 
-add_filter( 'default_checkout_state', 'change_default_checkout_state' );
-function change_default_checkout_state() {
+add_filter( 'default_checkout_billing_state', 'change_default_billing_checkout_state' );
+function change_default_billing_checkout_state() {
   return 'WA'; // state code
 }
 
