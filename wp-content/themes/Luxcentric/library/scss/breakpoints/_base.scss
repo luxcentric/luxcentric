@@ -831,54 +831,52 @@ POSTS & CONTENT STYLES
 		select { margin-bottom: 0; }
 	}
 
-.testimonials {
-	.testimonials-widget-testimonials {
-		margin-top: 1.5em;
+.testimonials-widget-testimonials {
+    margin-top: 1.5em;
 
-		.testimonials-widget-testimonial {
-			.image {
-				display: inline-block;
-				margin-right: 0.75em;
-				padding-right: 100px;
-				height: 130px;
-				width: auto;
-				background: url(../images/assets/backgrounds/testimonialBg.png) no-repeat right center;
+    .testimonials-widget-testimonial {
+        .image {
+            display: inline-block;
+            margin-right: 0.75em;
+            padding-right: 100px;
+            height: 130px;
+            width: auto;
+            background: url(../images/assets/backgrounds/testimonialBg.png) no-repeat right center;
 
-				img {
-					margin: 0 !important;	
-					width: 130px;
-					height: 130px;
-					object-fit: cover;
-					overflow: hidden;
-					border: solid 5px $white;
-					-webkit-border-radius: 50%;
-					-moz-border-radius: 50%;
-					border-radius: 50%;
-					background-color: $white; // hide gap between image and border
-				}
-			}
+            img {
+                margin: 0 !important;	
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                overflow: hidden;
+                border: solid 5px $white;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                background-color: $white; // hide gap between image and border
+            }
+        }
 
-			blockquote { 
-				margin: 0;
-				padding: 0;
+        blockquote { 
+            margin: 0;
+            padding: 0;
 
-				p { overflow: hidden; }
-			}
+            p { overflow: hidden; }
+        }
 
-			.credit { 
-				color: $salmon;
-				font-size: 0.88em;
-				font-weight: 700;
-				font-style: italic;
-				margin-left: 253px;
-				text-align: left;
+        .credit { 
+            color: $salmon;
+            font-size: 0.88em;
+            font-weight: 700;
+            font-style: italic;
+            margin-left: 253px;
+            text-align: left;
 
-				&:before { content: ""; }
+            &:before { content: ""; }
 
-				.join:before { content: " • "; }
-			}
-		}
-	}
+            .join:before { content: " • "; }
+        }
+    }
 }
 
 .tealBg {

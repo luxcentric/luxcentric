@@ -1921,16 +1921,16 @@ POSTS & CONTENT STYLES
   .blog-cat-dd select {
     margin-bottom: 0; }
 
-.testimonials .testimonials-widget-testimonials {
+.testimonials-widget-testimonials {
   margin-top: 1.5em; }
-  .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial .image {
+  .testimonials-widget-testimonials .testimonials-widget-testimonial .image {
     display: inline-block;
     margin-right: 0.75em;
     padding-right: 100px;
     height: 130px;
     width: auto;
     background: url(../images/assets/backgrounds/testimonialBg.png) no-repeat right center; }
-    .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial .image img {
+    .testimonials-widget-testimonials .testimonials-widget-testimonial .image img {
       margin: 0 !important;
       width: 130px;
       height: 130px;
@@ -1941,21 +1941,21 @@ POSTS & CONTENT STYLES
       -moz-border-radius: 50%;
       border-radius: 50%;
       background-color: #fff; }
-  .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial blockquote {
+  .testimonials-widget-testimonials .testimonials-widget-testimonial blockquote {
     margin: 0;
     padding: 0; }
-    .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial blockquote p {
+    .testimonials-widget-testimonials .testimonials-widget-testimonial blockquote p {
       overflow: hidden; }
-  .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial .credit {
+  .testimonials-widget-testimonials .testimonials-widget-testimonial .credit {
     color: #f16465;
     font-size: 0.88em;
     font-weight: 700;
     font-style: italic;
     margin-left: 253px;
     text-align: left; }
-    .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial .credit:before {
+    .testimonials-widget-testimonials .testimonials-widget-testimonial .credit:before {
       content: ""; }
-    .testimonials .testimonials-widget-testimonials .testimonials-widget-testimonial .credit .join:before {
+    .testimonials-widget-testimonials .testimonials-widget-testimonial .credit .join:before {
       content: " • "; }
 
 .tealBg {
