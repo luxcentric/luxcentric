@@ -860,6 +860,7 @@ POSTS & CONTENT STYLES
         blockquote { 
             margin: 0;
             padding: 0;
+            text-align: left;
 
             p { overflow: hidden; }
         }
@@ -2383,6 +2384,7 @@ SIDEBARS & ASIDES
 
 			blockquote {
 				margin: 0;
+                text-align: left;
 			}
 
 			.credit {

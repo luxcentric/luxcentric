@@ -1943,7 +1943,8 @@ POSTS & CONTENT STYLES
       background-color: #fff; }
   .testimonials-widget-testimonials .testimonials-widget-testimonial blockquote {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    text-align: left; }
     .testimonials-widget-testimonials .testimonials-widget-testimonial blockquote p {
       overflow: hidden; }
   .testimonials-widget-testimonials .testimonials-widget-testimonial .credit {
@@ -2952,7 +2953,8 @@ SIDEBARS & ASIDES
       line-height: 1.5;
       color: #00657e; }
     #sidebar3 #testimonials_widget-2 blockquote {
-      margin: 0; }
+      margin: 0;
+      text-align: left; }
     #sidebar3 #testimonials_widget-2 .credit {
       display: block;
       text-align: center;
