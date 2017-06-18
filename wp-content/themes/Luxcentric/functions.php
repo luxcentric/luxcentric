@@ -480,13 +480,13 @@ function my_membership_add_to_cart_redirect( $url ) {
 
   // Only redirect on products that have the 'membership' category
   if ( has_term( 'membership', 'product_cat', $product_id ) ) {
-    $url = WC()->cart->get_checkout_url();
+    $url = wc_get_checkout_url();
   }
 
   return $url;
 
 }
-add_filter( 'woocommerce_add_to_cart_redirect', 'my_membership_add_to_cart_redirect' );
+/* add_filter( 'woocommerce_add_to_cart_redirect', 'my_membership_add_to_cart_redirect' ); */
 
 function my_custom_my_account_menu_items( $items ) {
     $items = array(
