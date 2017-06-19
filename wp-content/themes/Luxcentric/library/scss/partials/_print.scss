@@ -21,16 +21,6 @@ though, go for it.
   a, a:visited {
     color: #444 !important;
     text-decoration: underline;
-
-    // show links on printed pages
-    &:after {
-      content: " (" attr(href) ")";
-    }
-
-    // show title too
-    abbr[title]:after {
-      content: " (" attr(title) ")";
-    }
   }
 
   .ir a:after,
@@ -71,6 +61,8 @@ though, go for it.
     }
 
     // hide content people who print don't need to see
+    .social-icons { display: none; }
+
     .sidebar,
     .page-navigation,
     .wp-prev-next,

@@ -4100,10 +4100,6 @@ be set to display none.
   a, a:visited {
     color: #444 !important;
     text-decoration: underline; }
-    a:after, a:visited:after {
-      content: " (" attr(href) ")"; }
-    a abbr[title]:after, a:visited abbr[title]:after {
-      content: " (" attr(title) ")"; }
 
   .ir a:after,
   a[href^="javascript:"]:after,
@@ -4132,6 +4128,9 @@ be set to display none.
   h2,
   h3 {
     page-break-after: avoid; }
+
+  .social-icons {
+    display: none; }
 
   .sidebar,
   .page-navigation,
