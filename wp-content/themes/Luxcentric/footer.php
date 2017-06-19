@@ -17,7 +17,7 @@
 
 				</div>
 				
-				<div class="source-org copyright"><span>&copy; <?php echo date('Y'); ?></span> <?php bloginfo( 'name' ); ?> | Website Design &amp; Development by <a href="http://caffecomm.com" target="_blank">Caffeinated Communications Studio</a></div>
+				<div class="source-org copyright"><span>&copy; <?php echo date('Y'); ?></span> <?php bloginfo( 'name' ); ?> | Website Design &amp; Development by <a href="http://caffeinatedcommunications.com/" target="_blank">Caffeinated Communications Studio</a></div>
 
 			</footer>
 
