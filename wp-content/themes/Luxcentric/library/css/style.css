@@ -2302,6 +2302,12 @@ p.woocommerce.add_to_cart_inline {
       display: block; }
 .sensei .sensei-message {
   border-radius: 0 !important; }
+.sensei .sensei-message.info .large-btn a {
+  text-decoration: none;
+  color: inherit; }
+.sensei .sensei-message.info .large-btn a:hover {
+  text-decoration: none;
+  color: inherit; }
 .sensei .sensei-message.tick {
   background: #e9f1f4 !important; }
   .sensei .sensei-message.tick:before {
