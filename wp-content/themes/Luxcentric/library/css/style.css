@@ -2348,6 +2348,12 @@ p.woocommerce.add_to_cart_inline {
   .sensei .nav-next .meta-nav:before {
     content: '\203A'; }
 
+#sensei-user-courses .meter {
+  font-size: 20px;
+  background: rgba(0, 101, 126, 0.25); }
+  #sensei-user-courses .meter > span {
+    background: #00657e; }
+
 #membership-levels .membership-level {
   background-color: #e9f1f4;
   padding: 1.5em 3em;

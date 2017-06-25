@@ -1432,6 +1432,15 @@ p.woocommerce.add_to_cart_inline {
 	}
 }
 
+#sensei-user-courses {
+    .meter { 
+        font-size: 20px; 
+        background: rgba($teal, 0.25);
+
+        > span { background: $teal; }
+    }
+}
+
 #membership-levels {
 	.membership-level {
 		background-color: $light-blue;
