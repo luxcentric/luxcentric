@@ -60,6 +60,9 @@ wp-content/uploads/*
 !certs/
 certs/*
 !certs/make-certs.sh
+!data/
+data/*
+!data/.gitkeep
 wp-content/themes/Luxcentric/library/scss/style.css
 wp-content/themes/Luxcentric/library/scss/style.css.map
 node_modules
