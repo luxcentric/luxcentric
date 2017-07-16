@@ -74,7 +74,15 @@ and it will create a button dependant on those variables.
   font-weight: auto;
 }
 
-.small-btn {
+.small-btn, .ext-link {
+    
+    a, a:visited {
+        color: $salmon;
+    }
+    
+    a:hover, a:visited:hover {
+        color: darken($salmon, 15%)
+    }
 
   .iconic {
     display: inline-block;

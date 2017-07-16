@@ -957,11 +957,15 @@ and it will create a button dependant on those variables.
   padding: 3px 8px;
   font-weight: auto; }
 
-.small-btn .iconic {
+.small-btn a, .small-btn a:visited, .ext-link a, .ext-link a:visited {
+  color: #f16465; }
+.small-btn a:hover, .small-btn a:visited:hover, .ext-link a:hover, .ext-link a:visited:hover {
+  color: #eb1e1f; }
+.small-btn .iconic, .ext-link .iconic {
   display: inline-block;
   vertical-align: middle;
   padding-top: 4px; }
-  .small-btn .iconic .icon-left-arrow:before, .small-btn .iconic .icon-right-arrow:before {
+  .small-btn .iconic .icon-left-arrow:before, .small-btn .iconic .icon-right-arrow:before, .ext-link .iconic .icon-left-arrow:before, .ext-link .iconic .icon-right-arrow:before {
     font-size: 2.5rem;
     line-height: 1; }
 
