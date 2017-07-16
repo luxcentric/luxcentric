@@ -26,7 +26,7 @@
 
 								<header class="article-header">
 
-									<h1 style="text-align: center;" class="home-page-title" itemprop="headline">How strong is your Technology Core?</h1>
+									<h1 style="text-align: center;" class="home-page-title" itemprop="headline">Is Your Email Inbox Overwhelming?</h1>
 									
 								</header> <?php // end article header ?>
 
