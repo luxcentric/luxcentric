@@ -3,10 +3,10 @@
  * Plugin Name: Luxcentric Site Plugin
  * Plugin URI: https://luxcentric.com/
  * Description: Custom code for luxcentric website.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Gary Ritchie
  * Requires at least: 4.7
- * Tested up to: 4.7
+ * Tested up to: 4.8.1
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -22,5 +22,15 @@ function luxcentric_courses() {
 	}
 }
 add_shortcode( 'luxcentric_user_courses', 'luxcentric_courses' );
+
+// Show text only if user is not signed in
+function lx_not_signed_in( $atts, $content = null ) {
+    if (is_user_logged_in()) {
+        return "";
+    } else {
+        return $content;
+    }
+}
+add_shortcode( 'lx_not_signed_in', 'lx_not_signed_in' );
 
 ?>
