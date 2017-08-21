@@ -3940,9 +3940,6 @@ you can add resource intensive styles.
     margin: 0 0 2.992em; }
   #membership-levels .membership-level .woocommerce ul.products li.first {
     clear: none !important; }
-  #membership-levels .membership-level .woocommerce ul.products li:nth-child(2n) {
-    float: right;
-    clear: none !important; }
 
   /****************************
   TRIBE EVENTS CALENDAR STYLES
