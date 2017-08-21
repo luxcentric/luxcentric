@@ -572,4 +572,7 @@ function add_is_mobile_bodyclass($classes) {
 }
 add_filter('body_class','add_is_mobile_bodyclass');
 
+// don't show related products
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
