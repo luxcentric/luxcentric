@@ -55,7 +55,7 @@
 									<div class="social-share social-icons"><?php dynamic_sidebar('sidebar4'); ?></div>				              
 				                </footer> <?php // end article footer ?>
 
-				                <?php //comments_template(); ?>
+				                <?php comments_template(); ?>
 
 				            	</article> <?php // end article ?>							
 

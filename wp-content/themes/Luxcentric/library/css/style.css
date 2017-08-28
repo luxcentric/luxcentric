@@ -2812,7 +2812,8 @@ COMMENT STYLES
 /* end .commentlist .comment_content */
 /* comment reply link */
 .comment-reply-link {
-  font-size: 0.9em;
+  font-size: 0.8em;
+  padding: 3px 8px;
   float: right; }
 
 /* end .commentlist .comment-reply-link */
@@ -2855,7 +2856,8 @@ COMMENT FORM STYLES
 /* comment submit button */
 #submit {
   float: right;
-  font-size: 1em; }
+  font-size: 1em;
+  padding: 3px 8px; }
 
 /* comment form title */
 #comment-form-title {

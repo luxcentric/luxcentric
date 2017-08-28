@@ -2155,7 +2155,8 @@ COMMENT STYLES
 	/* comment reply link */
 	.comment-reply-link {
 		@extend %btn;
-		font-size: 0.9em;
+		font-size: 0.8em;
+        padding: 3px 8px;
 		float: right;
 
 		&:hover,
@@ -2219,6 +2220,7 @@ COMMENT FORM STYLES
 		@extend %btn;
 		float: right;
 		font-size: 1em;
+        padding: 3px 8px;
 	}
 
 	/* comment form title */
