@@ -26,6 +26,12 @@ if ( !empty( $_GET['qid'] ) ) {
     }
 }
 
+if ( isset($_GET['fue_unsubscribed']) ) {
+    $unsubscribed_page_id = 3829;
+    $uri = get_page_link( $unsubscribed_page_id );
+    wp_safe_redirect( $uri );
+    exit;
+}
 
 get_header();
 ?>
@@ -76,7 +82,7 @@ get_header();
 
                     <p>
                         <label for="fue_unsubscribe_all">
-                            <input type="checkbox" name="unsubscribe_all" id="fue_unsubscribe_all" value="yes" />
+                            <input type="checkbox" name="unsubscribe_all" id="fue_unsubscribe_all" value="yes" checked="checked"/>
                             <?php _e('Do not send me non-order emails again', 'follow_up_emails'); ?>
                         </label>
                     </p>
