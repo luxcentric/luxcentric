@@ -31,6 +31,7 @@ get_header(); ?>
 
             <div class="entry-content">
                 <div class="follow-up-subscriptions">
+
                     <div class="fue-subscriptions-message hidden fue-success">
                         <p><span class="dashicons dashicons-yes"></span> <?php _e('Saved', 'follow_up_emails'); ?></p>
                     </div>
@@ -46,6 +47,7 @@ get_header(); ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
+
                         <input type="submit" class="button button-primary fue-button" value="<?php echo esc_attr( get_option('fue_email_subscriptions_button_text', 'Update Subscriptions') ); ?>" />
                     </form>
                 </div>
