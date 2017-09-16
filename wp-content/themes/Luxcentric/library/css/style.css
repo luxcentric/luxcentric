@@ -3177,6 +3177,10 @@ GRAVITY FORM STYLES
   width: 100%;
   height: 100%; }
 
+/* hide Log in on simple registration form */
+.woocommerce-simple-registration-login-link {
+  display: none; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
