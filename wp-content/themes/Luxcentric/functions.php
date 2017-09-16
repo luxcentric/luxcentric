@@ -511,8 +511,10 @@ function show_product_excerpt() {
 }
 
 // display course thumbnail before course title
-remove_action('sensei_course_content_inside_before', array( Sensei()->course, 'course_image' ) ,10, 1 );
-add_action('sensei_course_content_inside_before', array( Sensei()->course, 'course_image' ) ,3, 1 );
+if ( function_exists( 'Sensei' ) ) {
+    remove_action('sensei_course_content_inside_before', array( Sensei()->course, 'course_image' ) ,10, 1 );
+    add_action('sensei_course_content_inside_before', array( Sensei()->course, 'course_image' ) ,3, 1 );
+}
 
 /* tribe events calendar */
 // Singular
