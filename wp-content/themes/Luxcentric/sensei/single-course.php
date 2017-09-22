@@ -32,6 +32,20 @@
      * @hooked Sensei()->message->send_message_link        -  35
      * @hooked Sensei_Course::the_course_video             -  40
      */
+
+    /**
+     * registration needs to return to this page; this happens 
+     * automatically for login
+     */
+     error_log( 'installing registration redirect' );
+    add_filter( 'woocommerce_registration_redirect', 'lux_registration_redirect', 10, 1);
+
+    if ( luxcentric_use_custom_enrolment_actions() ) {
+        remove_action( 'sensei_single_course_content_inside_before', 
+                       'Sensei_Course::the_course_enrolment_actions', 30 );
+
+        add_action( 'sensei_single_course_content_inside_before', 'luxcentric_course_prefix', 30 );
+    }
     do_action( 'sensei_single_course_content_inside_before', get_the_ID() );
 
     ?>
