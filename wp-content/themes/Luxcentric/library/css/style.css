@@ -1581,9 +1581,9 @@ FONT ICONS
 HEADER STYLES
 *********************/
 .header #top-bar-wrapper {
-  /*position: fixed; 
-  top: 0; 
-  width: 100%; 
+  /*position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1000; */
   background-color: #fff;
   -webkit-box-shadow: 0 4px 6px rgba(50, 57, 68, 0.4);
@@ -1864,6 +1864,15 @@ POSTS & CONTENT STYLES
   margin: 0.75em auto 1.5em;
   width: 160px;
   height: 160px;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.circular-xsm {
+  margin: 0.75em auto 1.5em;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -2222,10 +2231,10 @@ p.woocommerce.add_to_cart_inline {
     border-bottom: 1px solid #e9f1f4; }
     .sensei ul.course-container li .course-content {
       /*
-      				.course-excerpt { 
-      					display: inline-block; 
+      				.course-excerpt {
+      					display: inline-block;
       
-      					&:after { 
+      					&:after {
       						content: "";
       						display: block;
       						margin-top: 1em;
@@ -2459,16 +2468,16 @@ TRIBE EVENTS CALENDAR STYLES
   #tribe-events-content-wrapper #tribe-events-bar #tribe-bar-form {
     display: none;
     			/*
-    			background: $light-blue; 
+    			background: $light-blue;
     
     			#tribe-bar-collapse-toggle { background: $light-blue; }
     
-    			.tribe-bar-views-inner { 
-    				background: $light-blue; 
+    			.tribe-bar-views-inner {
+    				background: $light-blue;
     
-    				.tribe-bar-views-list .tribe-bar-views-option a { 
+    				.tribe-bar-views-list .tribe-bar-views-option a {
     					background: $light-blue;
-    					font-size: 16px; 
+    					font-size: 16px;
     				}
     			}
     
@@ -3106,11 +3115,11 @@ GRAVITY FORM STYLES
   			input.button.gform_button_select_files {
   				@extend .small-btn;
   			}
-  		}	
+  		}
   	}
   
-  	#extensions_message { 
-  		font-size: 12px; 
+  	#extensions_message {
+  		font-size: 12px;
   		color: $teal;
   	}
   */
@@ -3125,18 +3134,18 @@ GRAVITY FORM STYLES
   		font-size: 0.64em;
   	}
   
-  	:-moz-placeholder { 
-  		color: $teal !important;  
+  	:-moz-placeholder {
+  		color: $teal !important;
   		font-size: 0.64em;
   	}
   
-  	::-moz-placeholder {  
-  		color: $teal !important;  
+  	::-moz-placeholder {
+  		color: $teal !important;
   		font-size: 0.64em;
   	}
   
-  	:-ms-input-placeholder {  
-  		color: $teal !important;  
+  	:-ms-input-placeholder {
+  		color: $teal !important;
   		font-size: 0.64em;
   	} */ }
   .gform_wrapper label, .gform_wrapper .gfield_required {
@@ -3728,7 +3737,7 @@ you can add resource intensive styles.
 
   .wrap {
     /*width: 1040px;*/
-    width: 75%; }
+    width: 94%; }
 
   /********************
   WORDPRESS BODY CLASSES
@@ -3910,6 +3919,10 @@ you can add resource intensive styles.
   .circular-sm {
     width: 250px;
     height: 250px; }
+
+  .circular-xsm {
+    width: 150px;
+    height: 150px; }
 
   .whiteBg {
     width: 55%; }

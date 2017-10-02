@@ -28,25 +28,25 @@ body {
 	    border: 0;
 	    height: 4px;
 	    background-image: linear-gradient(to right, rgba(241, 100, 101, 0), rgba(241, 100, 101, 1), rgba(241, 100, 101, 0));
-	}  	
+	}
 
 	hr.teal {
 	    border: 0;
 	    height: 4px;
-	    background-image: linear-gradient(to right, rgba(43, 60, 144, 0), rgba(20, 121, 145, 1), rgba(43, 60, 144, 0));		
-	}	
+	    background-image: linear-gradient(to right, rgba(43, 60, 144, 0), rgba(20, 121, 145, 1), rgba(43, 60, 144, 0));
+	}
 
 	hr.navy {
 	    border: 0;
 	    height: 4px;
-	    background-image: linear-gradient(to right, rgba(43, 60, 144, 0), rgba(43, 60, 144, 1), rgba(43, 60, 144, 0));		
-	}	
+	    background-image: linear-gradient(to right, rgba(43, 60, 144, 0), rgba(43, 60, 144, 1), rgba(43, 60, 144, 0));
+	}
 
 	hr.white {
 	    border: 0;
 	    height: 4px;
-	    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));		
-	}	
+	    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+	}
 }
 
 /********************
@@ -281,10 +281,10 @@ HEADER STYLES
 *********************/
 
 .header {
-	#top-bar-wrapper { 
-		/*position: fixed; 
-		top: 0; 
-		width: 100%; 
+	#top-bar-wrapper {
+		/*position: fixed;
+		top: 0;
+		width: 100%;
 		z-index: 1000; */
 		background-color: $white;
 		@include shadow(0, 4px, 6px, rgba($black, 0.4));
@@ -298,7 +298,7 @@ HEADER STYLES
 		}
 
 		#top-bar {}
-	}	
+	}
 }
 
 	#logo {
@@ -415,7 +415,7 @@ and more scalable.
 .woocommerce-MyAccount-navigation {
 	li {
 		text-transform: uppercase;
-		
+
 		&.is-active { color: $salmon; }
 
 		a { font-size: 0.9em; }
@@ -450,8 +450,8 @@ POSTS & CONTENT STYLES
 			color: $navy;
 		}
 
-		.single-title { 
-			text-align: center; 
+		.single-title {
+			text-align: center;
 			margin-bottom: 0.75em;
 			@include text-shadow;
 		}
@@ -461,7 +461,7 @@ POSTS & CONTENT STYLES
 			font-weight: 700;
 			line-height: 1.2;
 			color: $navy;
-			text-align: center;	
+			text-align: center;
 			@include text-shadow;
 		}
 
@@ -494,7 +494,7 @@ POSTS & CONTENT STYLES
 				margin: 0 0 1.5em;
 
 				/*&:only-of-type, &:last-child { margin: 0; }*/
-				
+
 				&:empty { display: none }
 			}
 
@@ -544,7 +544,7 @@ POSTS & CONTENT STYLES
 					text-indent: -1em;
 					padding-left: 1em; */
 					list-style-position: outside;
-					margin-left: 1.25em;				
+					margin-left: 1.25em;
 				}
 
 			}
@@ -695,14 +695,14 @@ POSTS & CONTENT STYLES
 
 	.flex-container {
 		display: -webkit-flex;
-		display: -ms-flexbox; 
+		display: -ms-flexbox;
 		display: flex;
 		-webkit-flex-flow: row wrap;
 		-ms-flex-flow: row wrap;
 		flex-flow: row wrap;
 		-webkit-justify-content: center;
 		-ms-flex-pack: center;
-		justify-content: center; 	
+		justify-content: center;
 
 		// default single column item
 		.flex-item, .flex-item-2, .flex-item-3, .flex-item-4 {
@@ -716,13 +716,13 @@ POSTS & CONTENT STYLES
 	.flex-pad { padding: 1em; }
 
 	.circular-lg {
-		margin: 0.75em auto 1.5em; 		
+		margin: 0.75em auto 1.5em;
       	width: 200px;
 		height: 200px;
 		overflow: hidden;
        -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
-        border-radius: 50%; 
+        border-radius: 50%;
 	}
 
 	.circular-sm {
@@ -732,7 +732,17 @@ POSTS & CONTENT STYLES
 		overflow: hidden;
 		-webkit-border-radius: 50%;
 		-moz-border-radius: 50%;
-		border-radius: 50%; 
+		border-radius: 50%;
+	}
+
+	.circular-xsm {
+		margin: 0.75em auto 1.5em;
+		width: 100px;
+		height: 100px;
+		overflow: hidden;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		border-radius: 50%;
 	}
 
 	.fp-head {
@@ -748,8 +758,8 @@ POSTS & CONTENT STYLES
 					[class^="icon-"]:before, [class*=" icon-"]:before { color: $white; }
 				}
 
-				p { 
-					font-size: 0.85em; 
+				p {
+					font-size: 0.85em;
 					line-height: 2.88;
 					color: $white;
 				}
@@ -772,21 +782,21 @@ POSTS & CONTENT STYLES
 
 		.icon-stack { margin-bottom: 0.5em; }
 
-		h4 { 
-			text-align: center; 
+		h4 {
+			text-align: center;
 			line-height: 1.2;
 			margin-top: 0.5em;
 		}
 
-		p { 
-			text-align: left; 
+		p {
+			text-align: left;
 			margin-bottom: 1em;
 		}
 	}
 
 	.about-us {
-		h2 { 
-			margin-bottom: 0.5em; 
+		h2 {
+			margin-bottom: 0.5em;
 			text-align: center;
 		}
 
@@ -810,9 +820,9 @@ POSTS & CONTENT STYLES
 		}
 	}
 
-	.vip-coaching {		
-		p:first-child { 
-			margin-bottom: 0; 
+	.vip-coaching {
+		p:first-child {
+			margin-bottom: 0;
 			text-align: center;
 		}
 
@@ -843,7 +853,7 @@ POSTS & CONTENT STYLES
             background: url(../images/assets/backgrounds/testimonialBg.png) no-repeat right center;
 
             img {
-                margin: 0 !important;	
+                margin: 0 !important;
                 width: 130px;
                 height: 130px;
                 object-fit: cover;
@@ -856,7 +866,7 @@ POSTS & CONTENT STYLES
             }
         }
 
-        blockquote { 
+        blockquote {
             margin: 0;
             padding: 0;
             text-align: left;
@@ -864,7 +874,7 @@ POSTS & CONTENT STYLES
             p { overflow: hidden; }
         }
 
-        .credit { 
+        .credit {
             color: $salmon;
             font-size: 0.88em;
             font-weight: 700;
@@ -884,7 +894,7 @@ POSTS & CONTENT STYLES
 	background: -moz-linear-gradient(left, #ffffff 0%, rgba(0,101,126,0.8) 35%, rgba(0,101,126,0.8) 65%, #ffffff 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(left, #ffffff 0%, rgba(0,101,126,0.8) 35%, rgba(0,101,126,0.8) 65%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, #ffffff 0%, rgba(0,101,126,0.8) 35%, rgba(0,101,126,0.8) 65%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00657e', endColorstr='#00657e',GradientType=0 ); /* IE6-9 */        
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00657e', endColorstr='#00657e',GradientType=0 ); /* IE6-9 */
 	color: $white;
 	width: 80%;
 	margin: 0 auto 1.5em;
@@ -897,7 +907,7 @@ POSTS & CONTENT STYLES
 	background: -moz-linear-gradient(left, rgba(0,101,126,0.1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 65%, rgba(0,101,126,0.1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(left, rgba(0,101,126,0.1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 65%, rgba(0,101,126,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, rgba(0,101,126,0.1) 0%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 65%, rgba(0,101,126,0.1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */        
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 	color: $navy;
 	width: 90%;
 	margin: 0 auto 1.5em;
@@ -906,7 +916,7 @@ POSTS & CONTENT STYLES
 }
 
 .featured-blog, .single {
-	.feat-thumb { 
+	.feat-thumb {
 		.circular-lg {
 			background-size: cover !important;
 			background-repeat: no-repeat !important;
@@ -944,12 +954,12 @@ POSTS & CONTENT STYLES
 /* Woocommerce */
 
 .woocommerce, .woocommerce-page, .sensei {
-	a.button, button.button, a.button.alt, button.button.alt, input.button, input.button.alt, input#submit, input[type="submit"] { 
+	a.button, button.button, a.button.alt, button.button.alt, input.button, input.button.alt, input#submit, input[type="submit"] {
 		@extend .woo-btn;
 		width: auto !important;
 	}
 }
-.woocommerce #payment #place_order, .woocommerce-page #payment #place_order { 
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
 	float: right !important;
 	width: auto !important;
 }
@@ -993,7 +1003,7 @@ p.woocommerce.add_to_cart_inline {
 
 	#content div.product div.summary, div.product div.summary {
 
-		h1 { 
+		h1 {
 			color: $teal;
 			font-size: 1.3em;
 		}
@@ -1028,13 +1038,13 @@ p.woocommerce.add_to_cart_inline {
 
 	.images { display: none; }
 
-	.product_meta { 
+	.product_meta {
 		margin-top: 0.75em;
 
 		.sku_wrapper { display: none; }
 	}
 
-	.woocommerce-tabs { 
+	.woocommerce-tabs {
 		background-color: $light-blue;
 		margin-bottom: 2em;
 		padding: 1.5em 3em;
@@ -1051,7 +1061,7 @@ p.woocommerce.add_to_cart_inline {
 	}
 
 	.woocommerce-variation-price { margin-bottom: 1em; }
-	
+
 	.woocommerce-error { background-color: $light-blue; }
 
 	table.cart {
@@ -1060,7 +1070,7 @@ p.woocommerce.add_to_cart_inline {
 		td.actions {
 			overflow: auto;
 
-			.coupon .input-text { 
+			.coupon .input-text {
 				width: 44% !important;
 				border: 1px solid $light-blue;
 			}
@@ -1080,7 +1090,7 @@ p.woocommerce.add_to_cart_inline {
 				opacity: 0.7;
 			}
 
-			:-ms-input-placeholder {  
+			:-ms-input-placeholder {
 				color: $blue;
 				opacity: 0.7;
 			}
@@ -1095,8 +1105,8 @@ p.woocommerce.add_to_cart_inline {
 		.woocommerce-shipping-fields { display: none; }
 	}
 
-	#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment { 
-		background: $light-blue; 
+	#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+		background: $light-blue;
 		border-radius: 0;
 
 		ul.payment_methods { border-bottom: 1px solid $blue; }
@@ -1129,8 +1139,8 @@ p.woocommerce.add_to_cart_inline {
 		.select2-arrow b:after { border-top-color: $blue; }
 	}
 
-	.select2-dropdown-open .select2-choice .select2-arrow b:after { 
-		border-bottom-color: $blue; 
+	.select2-dropdown-open .select2-choice .select2-arrow b:after {
+		border-bottom-color: $blue;
 		border-top-color: transparent;
 	}
 
@@ -1203,7 +1213,7 @@ p.woocommerce.add_to_cart_inline {
 			text-indent: 0;
 			padding-left: 0;
 
-			a { 
+			a {
 				border: 1px solid $blue;
 				background: $light-blue;
 
@@ -1214,8 +1224,8 @@ p.woocommerce.add_to_cart_inline {
 		}
 	}
 
-	ul.course-container { 
-		list-style-type: none; 
+	ul.course-container {
+		list-style-type: none;
 		border-bottom: none !important;
 		margin-bottom: 0 !important;
 
@@ -1223,16 +1233,16 @@ p.woocommerce.add_to_cart_inline {
 			text-indent: 0;
 			border-bottom: 1px solid $light-blue;
 
-			.course-content {	
-				a img { 
-					margin-right: 1.5em; 
+			.course-content {
+				a img {
+					margin-right: 1.5em;
 					margin-bottom: 1em;
 				}
 
-				.course-title { 
+				.course-title {
 					font-weight: 700;
 					font-style: normal;
-					color: $teal; 
+					color: $teal;
 					text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 				}
 
@@ -1241,10 +1251,10 @@ p.woocommerce.add_to_cart_inline {
 					color: $teal !important;
 				}
 /*
-				.course-excerpt { 
-					display: inline-block; 
+				.course-excerpt {
+					display: inline-block;
 
-					&:after { 
+					&:after {
 						content: "";
 						display: block;
 						margin-top: 1em;
@@ -1265,7 +1275,7 @@ p.woocommerce.add_to_cart_inline {
 			.course-content {
 				.course-excerpt {
 					/*margin-bottom: 0 !important;*/
-			
+
 					&:after {
 						content: "";
 						margin-top: 0;
@@ -1279,8 +1289,8 @@ p.woocommerce.add_to_cart_inline {
 	#main .course {
 		/*border-bottom: none;*/
 
-		.meter { 
-			font-size: 20px; 
+		.meter {
+			font-size: 20px;
 			background: rgba($teal, 0.25);
 
 			> span { background: $teal; }
@@ -1293,8 +1303,8 @@ p.woocommerce.add_to_cart_inline {
 		header {
 			margin-bottom: 0;
 
-			h2 { 
-				color: $white; 
+			h2 {
+				color: $white;
 				font-size: 1.3em;
 				line-height: 1.5;
 				background-color: $blue;
@@ -1313,10 +1323,10 @@ p.woocommerce.add_to_cart_inline {
 					padding-left: 60px;
 				}
 
-				header { 
-					margin-bottom: 0; 
+				header {
+					margin-bottom: 0;
 
-					h2 { 
+					h2 {
 						background-color: transparent;
 						border-top: 1px solid $light-blue;
 
@@ -1325,7 +1335,7 @@ p.woocommerce.add_to_cart_inline {
 							padding-left: 45px;
 							font-size: 0.75em;
 							line-height: 2;
-							color: $teal; 
+							color: $teal;
 
 							&:before {
 								display: inline-block;
@@ -1357,26 +1367,26 @@ p.woocommerce.add_to_cart_inline {
 		}
 	}
 
-	.sensei-message { 
+	.sensei-message {
 		border-radius: 0 !important;
 	}
-    
+
     .sensei-message.info {
         .large-btn {
             a {
                 text-decoration: none;
                 color: inherit;
             }
-            
+
             a:hover {
                 text-decoration: none;
-                color: inherit;                
+                color: inherit;
             }
-        }        
+        }
     }
 
-	.sensei-message.tick { 
-		background: $light-blue !important; 
+	.sensei-message.tick {
+		background: $light-blue !important;
 
 		&:before { color: $teal !important; }
 
@@ -1391,8 +1401,8 @@ p.woocommerce.add_to_cart_inline {
 		}
 	}
 
-	.video { 
-		margin-bottom: 1.5em !important; 
+	.video {
+		margin-bottom: 1.5em !important;
 
 		&:before {
 			content: "Step 1: Watch Video Lesson";
@@ -1406,13 +1416,13 @@ p.woocommerce.add_to_cart_inline {
 		}
 	}
 
-	.sensei-breadcrumb { 
-		color: $teal; 
+	.sensei-breadcrumb {
+		color: $teal;
 		background: transparent;
 		padding: 0.5em 0;
 
-		&:before { 
-			content: ""; 
+		&:before {
+			content: "";
 			width: 0;
 			margin-right: 0;
 		}
@@ -1432,8 +1442,8 @@ p.woocommerce.add_to_cart_inline {
 }
 
 #sensei-user-courses {
-    .meter { 
-        font-size: 20px; 
+    .meter {
+        font-size: 20px;
         background: rgba($teal, 0.25);
 
         > span { background: $teal; }
@@ -1447,7 +1457,7 @@ p.woocommerce.add_to_cart_inline {
 		margin-top: 1em;
 
 		h2 { margin-bottom: 1em; }
-		
+
 		h3 { color: $blue; }
 
 		p.product {
@@ -1460,27 +1470,27 @@ p.woocommerce.add_to_cart_inline {
 			.amount { padding-right: 1em; }
 		}
 
-		a.button { 
-			display: inline-block !important; 
+		a.button {
+			display: inline-block !important;
 			margin-bottom: 1em;
 			margin-top: 0;
 		}
 
-		img { 
+		img {
 			max-width: 90px;
 			height: auto;
 			float: left;
 			margin-right: 1em;
 		}
 
-		.woocommerce ul.products li.product, .woocommerce[class*=columns-] ul.products li.product { 
+		.woocommerce ul.products li.product, .woocommerce[class*=columns-] ul.products li.product {
 			text-align: left;
 			width: 100%;
 
 			#product-details {
 				clear: both;
 				display: block !important;
-			
+
 				p { margin-bottom: 0; }
 			}
 		}
@@ -1557,19 +1567,19 @@ TRIBE EVENTS CALENDAR STYLES
 
 #tribe-events-content-wrapper {
 	#tribe-events-bar {
-		#tribe-bar-form { 
+		#tribe-bar-form {
 			display: none;
 			/*
-			background: $light-blue; 
+			background: $light-blue;
 
 			#tribe-bar-collapse-toggle { background: $light-blue; }
 
-			.tribe-bar-views-inner { 
-				background: $light-blue; 
+			.tribe-bar-views-inner {
+				background: $light-blue;
 
-				.tribe-bar-views-list .tribe-bar-views-option a { 
+				.tribe-bar-views-list .tribe-bar-views-option a {
 					background: $light-blue;
-					font-size: 16px; 
+					font-size: 16px;
 				}
 			}
 
@@ -1595,7 +1605,7 @@ TRIBE EVENTS CALENDAR STYLES
 						margin: 0;
 						vertical-align: middle;
 					}
-				}			
+				}
 			}
 
 			figcaption {
@@ -1610,7 +1620,7 @@ TRIBE EVENTS CALENDAR STYLES
 						content: "Price: ";
 					}
 
-					span { 
+					span {
 						background: transparent;
 						border: none;
 						display: inline-block;
@@ -1626,15 +1636,15 @@ TRIBE EVENTS CALENDAR STYLES
 					padding: 0;
 
 					.tribe-event-schedule-details {}
-				}		
+				}
 			}
 
 			.tribe-events-list-separator-month {
 				background-color: $blue;
 				margin: 0;
 
-				span { 
-					color: $white; 
+				span {
+					color: $white;
 					background-color: transparent;
 				}
 
@@ -1655,7 +1665,7 @@ TRIBE EVENTS CALENDAR STYLES
 					padding: 8px;
 					border-radius: 18px;
 
-					.iconic .icon-right-arrow:before { 
+					.iconic .icon-right-arrow:before {
 						font-size: 1.25rem;
 						line-height: 1;
 						vertical-align: middle;
@@ -1685,12 +1695,12 @@ TRIBE EVENTS CALENDAR STYLES
 	table.tribe-mini-calendar {
 		border: 1px solid $blue;
 
-		thead { 
-			background: $blue; 
+		thead {
+			background: $blue;
 
 			tr td { border: none; }
 
-			th.tribe-mini-calendar-dayofweek { 
+			th.tribe-mini-calendar-dayofweek {
 				background: $blue;
 				background-color: $blue;
 
@@ -1703,21 +1713,21 @@ TRIBE EVENTS CALENDAR STYLES
 
 		th { border: 1px solid $white; }
 
-		td { 
-			background: $white; 
+		td {
+			background: $white;
 			border-color: $blue;
 
 			span { color: $blue; }
 		}
 
 		.tribe-events-othermonth, .tribe-events-past {
-			background: $light-blue; 
+			background: $light-blue;
 			color: $white;
 			opacity: 1;
 		}
 
-		.tribe-events-has-events { 
-			background: $teal; 
+		.tribe-events-has-events {
+			background: $teal;
 			color: $white;
 
 			&:hover, a:hover { background: $teal; }
@@ -1734,7 +1744,7 @@ TRIBE EVENTS CALENDAR STYLES
 		.list-dayname { color: $blue; }
 	}
 }
-	
+
 h2.tribe-events-page-title {
 	color: $blue;
 }
@@ -1759,15 +1769,15 @@ h2.tribe-events-page-title {
 
 	td.tribe-events-past div[id*=tribe-events-daynum-] { background-color: $baby-blue; }
 
-	td div[id*=tribe-events-daynum-] { 
+	td div[id*=tribe-events-daynum-] {
 		color: $white;
 		background-color: $blue;
 
 		a, a:visited { color: $white; }
 	}
 
-	td { 
-		border: 1px solid $navy !important; 
+	td {
+		border: 1px solid $navy !important;
 
 		&:hover { background: $light-blue !important; }
 	}
@@ -1786,7 +1796,7 @@ h2.tribe-events-page-title {
 				margin: 0;
 				vertical-align: middle;
 			}
-		}	
+		}
 	}
 
 	figcaption {
@@ -1802,17 +1812,17 @@ h2.tribe-events-page-title {
 	}
 
 	#tribe-events #tribe-events-content {
-		p { 
+		p {
 			line-height: 1.5;
 			margin-bottom: 1.5em;
 		}
 
 		form {
-			table { 
-				border: 0 !important; 
+			table {
+				border: 0 !important;
 
-				tr { 
-					border: 0 !important; 
+				tr {
+					border: 0 !important;
 
 					td { border: 0 !important; }
 				}
@@ -1821,8 +1831,8 @@ h2.tribe-events-page-title {
 	}
 
 	div.web-sessions {
-		&:nth-of-type(odd) { 
-			background-color: $light-blue; 
+		&:nth-of-type(odd) {
+			background-color: $light-blue;
 			padding: 1em;
 		}
 
@@ -1843,14 +1853,14 @@ h2.tribe-events-page-title {
 		.tribe-events-tickets-title { color: $blue; }
 
 		table.tribe-events-tickets {
-			td { 
-				border-top: 1px solid $blue; 
+			td {
+				border-top: 1px solid $blue;
 				border-bottom: 1px solid $blue;
-				padding: 8px 10px 8px 8px; 
+				padding: 8px 10px 8px 8px;
 			}
 
-			.tickets_name, .tickets_price, .tickets_description { 
-				color: $blue; 
+			.tickets_name, .tickets_price, .tickets_description {
+				color: $blue;
 				font-size: 1em;
 			}
 
@@ -1863,7 +1873,7 @@ h2.tribe-events-page-title {
 
 /* Calendly Scheduler */
 .schedule-session {
-	iframe body.page-loaded { 
+	iframe body.page-loaded {
 		color: $blue !important;
 		font-family: $montserrat;
 
@@ -2286,13 +2296,13 @@ SIDEBARS & ASIDES
 		margin-bottom: 1.5em;
 	}
 
-#sidebar2 { 
+#sidebar2 {
 	display: block;
-	margin: 0; 
+	margin: 0;
 	text-align: center;
 
-	> div { 
-		display: inline-block; 
+	> div {
+		display: inline-block;
 		vertical-align: middle;
 	}
 
@@ -2303,8 +2313,8 @@ SIDEBARS & ASIDES
 				float: left;
 				position: relative;
 
-				a, a:visited { 
-					font-size: 12px; 
+				a, a:visited {
+					font-size: 12px;
 					line-height: 30px;
 					display: inline-block;
 					color: $salmon;
@@ -2313,7 +2323,7 @@ SIDEBARS & ASIDES
 
 				&:last-child {
 					.iconic {
-						[class^="icon-"]:before, [class*=" icon-"]:before { 
+						[class^="icon-"]:before, [class*=" icon-"]:before {
 							color: $salmon;
 							font-size: 2.5rem;
 							line-height: 30px;
@@ -2369,26 +2379,26 @@ SIDEBARS & ASIDES
 					line-height: 28px;
 					font-size: 16px;
 				}
-				
+
 				::-webkit-input-placeholder {
 					color: $salmon;
 					opacity: 0.7;
 				}
 
 				:-moz-placeholder { /* Firefox 18- */
-					color: $salmon;  
+					color: $salmon;
 					opacity: 0.7;
 				}
 
 				::-moz-placeholder {  /* Firefox 19+ */
-					color: $salmon;  
+					color: $salmon;
 					opacity: 0.7;
 				}
 
-				:-ms-input-placeholder {  
-					color: $salmon;  
+				:-ms-input-placeholder {
+					color: $salmon;
 					opacity: 0.7;
-				}			
+				}
 			}
 		}
 	/*}*/
@@ -2427,17 +2437,17 @@ SIDEBARS & ASIDES
 		#text-3 { @include text-shadow; }
 	}
 
-	#social_media_widget-2 { 
+	#social_media_widget-2 {
 		.widgettitle { display: none; }
 	}
-	
+
 	.social-share {
 		margin-top: 1em;
 		color: $salmon;
 
 		&:before { content: "SHARE THIS! "; }
 
-		.widget_text { 
+		.widget_text {
 			display: inline;
 
 			.textwidget {
@@ -2463,8 +2473,8 @@ FOOTER STYLES
 	text-align: center;
 }
 
-#footer-wrapper { 
-	background-color: $light-blue; 
+#footer-wrapper {
+	background-color: $light-blue;
 	padding-top: 1.5em;
 	@include shadow(0px, -8px, 25px, rgba($black, 0.2));
 }
@@ -2488,7 +2498,7 @@ FOOTER STYLES
 				text-align: left;
 /*				display: inline-block; */
 
-				a { 
+				a {
 					color: $gray;
 					font-weight: 700;
 
@@ -2539,7 +2549,7 @@ FOOTER STYLES
 		hyphens: none;
 		font-size: 0.8em;
 		font-weight: 700;
-		line-height: 1.2;		
+		line-height: 1.2;
 
 		a, a:visited { color: $white; }
 
@@ -2551,7 +2561,7 @@ GRAVITY FORM STYLES
 *********************/
 .gform_wrapper {
 
-	label, .gfield_required { display: none !important; }	
+	label, .gfield_required { display: none !important; }
 	margin: 0 auto !important;
 
 	.gform_heading {
@@ -2585,11 +2595,11 @@ GRAVITY FORM STYLES
 			input.button.gform_button_select_files {
 				@extend .small-btn;
 			}
-		}	
+		}
 	}
 
-	#extensions_message { 
-		font-size: 12px; 
+	#extensions_message {
+		font-size: 12px;
 		color: $teal;
 	}
 */
@@ -2604,18 +2614,18 @@ GRAVITY FORM STYLES
 		font-size: 0.64em;
 	}
 
-	:-moz-placeholder { 
-		color: $teal !important;  
+	:-moz-placeholder {
+		color: $teal !important;
 		font-size: 0.64em;
 	}
 
-	::-moz-placeholder {  
-		color: $teal !important;  
+	::-moz-placeholder {
+		color: $teal !important;
 		font-size: 0.64em;
 	}
 
-	:-ms-input-placeholder {  
-		color: $teal !important;  
+	:-ms-input-placeholder {
+		color: $teal !important;
 		font-size: 0.64em;
 	} */
 }
