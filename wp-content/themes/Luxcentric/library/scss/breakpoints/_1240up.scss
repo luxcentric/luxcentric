@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name:
+Author:
 
 Stylesheet: Super Large Monitor Stylesheet
 
@@ -10,7 +10,7 @@ on larger screens.
 ******************************************************************/
 
 .wrap {
-	width: 1200px;
+	width: 1100px;
 }
 
 /********************
@@ -20,12 +20,12 @@ style a page via class
 
 body.page-template-front-page {
 	background: url('../images/assets/backgrounds/homeBg1400.jpg') no-repeat center top;
-	@include responsive-bg-image(1400, 950);	
+	@include responsive-bg-image(1400, 950);
 }
 
 body.page-template-default, body.blog, body.single {
 	background: url('../images/assets/backgrounds/pageBg1400.jpg') no-repeat center top;
-	@include responsive-bg-image(1400, 400);	
+	@include responsive-bg-image(1400, 400);
 }
 
 /*********************
@@ -33,7 +33,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 	.hentry {
-		
+
 		header {
 
 			.home-page-title { font-size: 2.4em; }
@@ -41,10 +41,9 @@ POSTS & CONTENT STYLES
 		}
 	}
 
-.fp-head { 
-	width: 1200px; 
+.fp-head {
+	width: 1200px;
 	background-position: 10% center;
 }
 
 .whiteBg { width: 45%; }
-

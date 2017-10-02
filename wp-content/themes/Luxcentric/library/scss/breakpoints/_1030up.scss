@@ -18,7 +18,7 @@ body {
 
 .wrap {
 	/*width: 1040px;*/
-	width: 94%;
+	width: 75%;
 }
 
 /********************
@@ -46,11 +46,11 @@ HEADER STYLES
 *********************/
 
 .header {
-	#top-bar-wrapper { 
+	#top-bar-wrapper {
 		#top-bar-pattern {
 			background-size: 100% auto;
 		}
-	}	
+	}
 }
 
 	#inner-header {
@@ -83,7 +83,7 @@ NAVIGATION STYLES
 		display: inline-block;
 
 		li {
-			a { 
+			a {
 				font-size: 16px;
 
 				&:hover, &:focus {
@@ -107,7 +107,7 @@ NAVIGATION STYLES
 				visibility: hidden;
 				z-index: 8999;
 				background: $white;
-				box-shadow: 0px 0px 0px 8px rgba($white, 0.6);   
+				box-shadow: 0px 0px 0px 8px rgba($white, 0.6);
 
 				li {
 					text-align: left;
@@ -120,12 +120,12 @@ NAVIGATION STYLES
 
 						.icon-stack {
 							display: inline-block;
-					
+
 							.iconic {
 								width: 1.75em;
 								height: 1.25em;
 
-								[class^="icon-"]:before, [class*=" icon-"]:before { 
+								[class^="icon-"]:before, [class*=" icon-"]:before {
 									color: $teal;
 									font-size: 1.25rem;
 									line-height: 29px;
@@ -135,11 +135,11 @@ NAVIGATION STYLES
 
 							.icon-stack.fb {
 								color: #3B5998 !important;
-								.icon-circle:before { 
+								.icon-circle:before {
 									color: #3B5998 !important;
-									opacity: 1 !important; 
+									opacity: 1 !important;
 								}
-							}							
+							}
 						}
 
 						&:hover,
@@ -165,7 +165,7 @@ NAVIGATION STYLES
 					ul {
 						top:0;
 						left:100%;
-					}				
+					}
 				}
 
 				/* highlight sub-menu current page */
@@ -190,7 +190,7 @@ NAVIGATION STYLES
 			/*a:after { */
 				background-image: url(../images/assets/backgrounds/hilite.png);
 				background-repeat: no-repeat;
-				background-position: 50% 80%; 
+				background-position: 50% 80%;
 			/*}*/
 		}  /* end current highlighters */
 	}
@@ -211,8 +211,8 @@ POSTS & CONTENT STYLES
 
 /* entry content */
 .entry-content {
-	ul.checklist li { 
-		text-indent: -3.35em; 
+	ul.checklist li {
+		text-indent: -3.35em;
 		padding-left: 2.2em;
 	}
 }
@@ -224,7 +224,7 @@ POSTS & CONTENT STYLES
 	background-size: contain;
 
 	.wrap70 { width: 70%; }
-	
+
 	#strength-core-txt {
 		> p { padding: 0 4em; }
 	}
@@ -257,8 +257,8 @@ POSTS & CONTENT STYLES
 }
 
 .featured-blog {
-	.feat-thumb { 
-		margin-top: -80px; 
+	.feat-thumb {
+		margin-top: -80px;
 
 		.circular-lg { @include shadow(20px, 7px, 0, $white); }
 	}
@@ -281,7 +281,7 @@ POSTS & CONTENT STYLES
 
 	//.woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
 	#content div.product div.summary, div.product div.summary, #content div.product div.summary, div.product div.summary {
-		> div:nth-of-type(1) { 
+		> div:nth-of-type(1) {
 			margin-bottom: 1em;
 		}
 	}
@@ -299,7 +299,7 @@ POSTS & CONTENT STYLES
 
 #membership-levels {
 	.membership-level {
-		.woocommerce ul.products li.product, .woocommerce[class*=columns-] ul.products li.product { 
+		.woocommerce ul.products li.product, .woocommerce[class*=columns-] ul.products li.product {
 			width: 48%;
 			margin: 0 0 2.992em;
 		}
@@ -311,26 +311,26 @@ POSTS & CONTENT STYLES
 /****************************
 TRIBE EVENTS CALENDAR STYLES
 ****************************/
-	
+
 /* month view calendar */
 
 .tribe-events-calendar {
 	.tribe-events-tooltip { color: $blue; }
 }
-	
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
 
-#sidebar2 { 
+#sidebar2 {
 	.woo-links {
 		ul#menu-woo-menu {
 			li {
 				line-height: 55px;
 
-				a, a:visited { 
+				a, a:visited {
 					/*font-size: 0.64em; */
-					font-size: 16px; 
+					font-size: 16px;
 					line-height: 30px;
 				}
 			}
@@ -345,7 +345,7 @@ SIDEBARS & ASIDES
 }
 
 	/* search widget */
-/*	#search-2 {	
+/*	#search-2 {
 
 		.search-form {
 			.searchbox-wrapper {

@@ -1414,7 +1414,7 @@ body {
   background: url("../images/assets/backgrounds/pageBg481.jpg") no-repeat center top;
   background-size: 100%;
   height: 0;
-  padding-bottom: 35.75884%;
+  padding-bottom: 35.7588357588%;
   display: block; }
 
 body.page-template-front-page {
@@ -3214,7 +3214,7 @@ tweeners.
     background: url("../images/assets/backgrounds/pageBg767.jpg") no-repeat center top;
     background-size: 100%;
     height: 0;
-    padding-bottom: 28.5528%;
+    padding-bottom: 28.5528031291%;
     display: block; }
 
   /*********************
@@ -3304,7 +3304,7 @@ you can add resource intensive styles.
     background: url("../images/assets/backgrounds/homeBg1029.jpg") no-repeat center top;
     background-size: 100%;
     height: 0;
-    padding-bottom: 67.83285%;
+    padding-bottom: 67.8328474247%;
     display: block; }
 
   /* home page */
@@ -3312,7 +3312,7 @@ you can add resource intensive styles.
     background: url("../images/assets/backgrounds/pageBg1029.jpg") no-repeat center top;
     background-size: 100%;
     height: 0;
-    padding-bottom: 28.57143%;
+    padding-bottom: 28.5714285714%;
     display: block; }
 
   /*********************
@@ -3728,7 +3728,7 @@ you can add resource intensive styles.
 
   .wrap {
     /*width: 1040px;*/
-    width: 94%; }
+    width: 75%; }
 
   /********************
   WORDPRESS BODY CLASSES
@@ -3738,7 +3738,7 @@ you can add resource intensive styles.
     background: url("../images/assets/backgrounds/homeBg1239.jpg") no-repeat center top;
     background-size: 100%;
     height: 0;
-    padding-bottom: 67.87732%;
+    padding-bottom: 67.8773204197%;
     display: block; }
 
   /* home page */
@@ -3746,7 +3746,7 @@ you can add resource intensive styles.
     background: url("../images/assets/backgrounds/pageBg1239.jpg") no-repeat center top;
     background-size: 100%;
     height: 0;
-    padding-bottom: 28.57143%;
+    padding-bottom: 28.5714285714%;
     display: block; }
 
   /*********************
@@ -3967,7 +3967,7 @@ you can add resource intensive styles.
     font-size: 1.5em; }
 
   /* search widget */
-  /*	#search-2 {	
+  /*	#search-2 {
   
   		.search-form {
   			.searchbox-wrapper {
@@ -4019,8 +4019,8 @@ This is for the larger monitors and possibly full screen viewers.
 *********************/
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name:
+  Author:
   
   Stylesheet: Super Large Monitor Stylesheet
   
@@ -4029,7 +4029,7 @@ This is for the larger monitors and possibly full screen viewers.
   
   ******************************************************************/
   .wrap {
-    width: 1200px; }
+    width: 1100px; }
 
   /********************
   WORDPRESS BODY CLASSES
@@ -4039,14 +4039,14 @@ This is for the larger monitors and possibly full screen viewers.
     background: url("../images/assets/backgrounds/homeBg1400.jpg") no-repeat center top;
     background-size: 100%;
     height: 0;
-    padding-bottom: 67.85714%;
+    padding-bottom: 67.8571428571%;
     display: block; }
 
   body.page-template-default, body.blog, body.single {
     background: url("../images/assets/backgrounds/pageBg1400.jpg") no-repeat center top;
     background-size: 100%;
     height: 0;
-    padding-bottom: 28.57143%;
+    padding-bottom: 28.5714285714%;
     display: block; }
 
   /*********************
