@@ -957,9 +957,6 @@ and it will create a button dependant on those variables.
   padding: 3px 8px;
   font-weight: auto; }
 
-.small-btn a, .ext-link a {
-  display: inline-block;
-  position: relative; }
 .small-btn a, .small-btn a:visited, .ext-link a, .ext-link a:visited {
   color: #f16465; }
 .small-btn a:hover, .small-btn a:visited:hover, .small-btn a:focus, .small-btn a:visited:focus, .ext-link a:hover, .ext-link a:visited:hover, .ext-link a:focus, .ext-link a:visited:focus {

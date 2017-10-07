@@ -50,7 +50,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   // clicking on the button
   &:active {
     top: 1px; // adds a tiny hop to the click
-  } // end active  
+  } // end active
 } // end .button
 
 /*
@@ -75,19 +75,14 @@ and it will create a button dependant on those variables.
 }
 
 .small-btn, .ext-link {
-    a {
-        display:inline-block;
-        position:relative;
-    }
-
     a, a:visited {
         color: $salmon;
     }
-    
+
     a:hover, a:visited:hover, a:focus, a:visited:focus {
         color: darken($salmon, 15%);
     }
-    
+
     a:active {
         color: $salmon;
         top: 1px;
