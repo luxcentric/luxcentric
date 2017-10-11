@@ -3,7 +3,7 @@
  * Plugin Name: Luxcentric Site Plugin
  * Plugin URI: https://luxcentric.com/
  * Description: Custom code for luxcentric website.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Gary Ritchie
  * Requires at least: 4.7
  * Tested up to: 4.8.2
@@ -167,6 +167,7 @@ function lux_woocommerce_created_customer( $customer_id, $new_customer_data, $pa
   $post_body .= "<FL val=\"Last Name\">$last</FL>";
   $post_body .= "<FL val=\"Email\">$email</FL>";
   $post_body .= '<FL val="Lead Source">Registration</FL>';
+  $post_body .= '<FL val="Account Name">Lux-Member</FL>';
   $post_body .= '</row></Contacts>';
 
   $params = array(
@@ -178,12 +179,12 @@ function lux_woocommerce_created_customer( $customer_id, $new_customer_data, $pa
 
   $response = wp_remote_post( $apiUrl, array('body' => $params));
   // if ( is_wp_error( $response ) ) {
-  //   $error_message = $response->get_error_message();
-  //   echo "Something went wrong: $error_message";
+  //  $error_message = $response->get_error_message();
+  //  echo "Something went wrong: $error_message";
   // } else {
-  //   echo 'Response:<pre>';
-  //   print_r( $response );
-  //   echo '</pre>';
+  //  echo 'Response:<pre>';
+  //  print_r( $response );
+  //  echo '</pre>';
   // }
 };
 
