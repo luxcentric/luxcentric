@@ -3,10 +3,10 @@
  * Plugin Name: Luxcentric Site Plugin
  * Plugin URI: https://luxcentric.com/
  * Description: Custom code for luxcentric website.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Gary Ritchie
  * Requires at least: 4.7
- * Tested up to: 4.8.1
+ * Tested up to: 4.8.2
  */
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
@@ -58,7 +58,7 @@ function luxcentric_use_custom_enrolment_actions() {
     if ( is_user_logged_in() ) {
         return FALSE;
     }
-    
+
     if ( Sensei_WC::is_woocommerce_active() && Sensei_WC::is_course_purchasable( $post->ID ) ) {
         return FALSE;
     }
@@ -75,7 +75,7 @@ function luxcentric_course_prefix() {
        error_log( 'unexpected call to luxcentric_course_prefix' );
        return;
     }
-    
+
     ?>
     <section class="course-meta course-enrolment">
     <?php
@@ -149,5 +149,44 @@ function lux_process_registration() {
     }
 }
 add_action( 'wp_loaded', 'lux_process_registration', 19 );
+
+function lux_woocommerce_created_customer( $customer_id, $new_customer_data, $password_generated ) {
+  $first = get_user_meta( $customer_id, 'first_name', true);
+  $last = get_user_meta( $customer_id, 'last_name', true);
+  $email = $new_customer_data['user_email'];
+
+  $zohoApiToken = get_option('pp_wczcp_zoho_api_token');
+  if (empty($zohoApiToken))
+    return;
+
+   $apiUrl = get_option('pp_wczcp_zoho_host',
+       'https://crm.zoho.com').'/crm/private/xml/Contacts/insertRecords';
+
+  $post_body = '<Contacts><row no="1">';
+  $post_body .= "<FL val=\"First Name\">$first</FL>";
+  $post_body .= "<FL val=\"Last Name\">$last</FL>";
+  $post_body .= "<FL val=\"Email\">$email</FL>";
+  $post_body .= '<FL val="Lead Source">Registration</FL>';
+  $post_body .= '</row></Contacts>';
+
+  $params = array(
+    'authtoken' => $zohoApiToken,
+    'scope' => 'crmapi',
+    'duplicateCheck' => 1,
+    'xmlData' => $post_body
+  );
+
+  $response = wp_remote_post( $apiUrl, array('body' => $params));
+  // if ( is_wp_error( $response ) ) {
+  //   $error_message = $response->get_error_message();
+  //   echo "Something went wrong: $error_message";
+  // } else {
+  //   echo 'Response:<pre>';
+  //   print_r( $response );
+  //   echo '</pre>';
+  // }
+};
+
+add_action( 'woocommerce_created_customer', 'lux_woocommerce_created_customer', 20, 3 );
 
 ?>
