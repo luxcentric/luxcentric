@@ -3,7 +3,7 @@
  * Plugin Name: Luxcentric Site Plugin
  * Plugin URI: https://luxcentric.com/
  * Description: Custom code for luxcentric website.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Gary Ritchie
  * Requires at least: 4.7
  * Tested up to: 4.8.2
@@ -96,59 +96,6 @@ function lux_current_url() {
     $current_url = home_url(add_query_arg(array(),$wp->request));
     return $current_url;
 }
-
-/**
- * Process the registration form. Modified version of WC_Form_Handler version
- */
-function lux_process_registration() {
-    $nonce_value = isset( $_POST['_wpnonce'] ) ? $_POST['_wpnonce'] : '';
-    $nonce_value = isset( $_POST['woocommerce-register-nonce'] ) ? $_POST['woocommerce-register-nonce'] : $nonce_value;
-
-    if ( ! empty( $_POST['register'] ) && wp_verify_nonce( $nonce_value, 'woocommerce-register' ) ) {
-        $username = 'no' === get_option( 'woocommerce_registration_generate_username' ) ? $_POST['username'] : '';
-        $password = 'no' === get_option( 'woocommerce_registration_generate_password' ) ? $_POST['password'] : '';
-        $email    = $_POST['email'];
-
-        try {
-            $validation_error = new WP_Error();
-            $validation_error = apply_filters( 'woocommerce_process_registration_errors', $validation_error, $username, $password, $email );
-
-            if ( $validation_error->get_error_code() ) {
-                throw new Exception( $validation_error->get_error_message() );
-            }
-
-            // Anti-spam trap
-            if ( ! empty( $_POST['email_2'] ) ) {
-                throw new Exception( __( 'Anti-spam field was filled in.', 'woocommerce' ) );
-            }
-
-            $new_customer = wc_create_new_customer( sanitize_email( $email ), wc_clean( $username ), $password );
-
-            if ( is_wp_error( $new_customer ) ) {
-                throw new Exception( $new_customer->get_error_message() );
-            }
-
-            if ( apply_filters( 'woocommerce_registration_auth_new_customer', true, $new_customer ) ) {
-                wc_set_customer_auth_cookie( $new_customer );
-            }
-
-            // allow redirect to same page using same logic as login
-            if ( ! empty( $_POST['redirect'] ) ) {
-                $redirect = $_POST['redirect'];
-            } elseif ( wc_get_raw_referer() ) {
-                $redirect = wc_get_raw_referer();
-            } else {
-                $redirect = wc_get_page_permalink( 'myaccount' );
-            }
-            wp_redirect( wp_validate_redirect( apply_filters( 'woocommerce_registration_redirect', $redirect ), wc_get_page_permalink( 'myaccount' ) ) );
-            exit;
-
-        } catch ( Exception $e ) {
-            wc_add_notice( '<strong>' . __( 'Error:', 'woocommerce' ) . '</strong> ' . $e->getMessage(), 'error' );
-        }
-    }
-}
-add_action( 'wp_loaded', 'lux_process_registration', 19 );
 
 function lux_woocommerce_created_customer( $customer_id, $new_customer_data, $password_generated ) {
   $first = get_user_meta( $customer_id, 'first_name', true);
