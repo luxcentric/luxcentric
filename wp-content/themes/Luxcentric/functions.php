@@ -503,12 +503,14 @@ function my_custom_my_account_menu_items( $items ) {
 
 add_filter( 'woocommerce_account_menu_items', 'my_custom_my_account_menu_items' );
 
-add_action( 'woocommerce_after_shop_loop_item', 'show_product_excerpt' );
-function show_product_excerpt() {
-    echo '<div id="product-details" style="display: none;">';
-      the_excerpt();
-    echo '</div>';
-}
+// This was messing up display of more than 2 products on a page.
+// https://github.com/luxcentric/luxcentric/issues/71
+//add_action( 'woocommerce_after_shop_loop_item', 'show_product_excerpt' );
+//function show_product_excerpt() {
+//    echo '<div id="product-details" style="display: none;">';
+//      the_excerpt();
+//    echo '</div>';
+//}
 
 // display course thumbnail before course title
 if ( function_exists( 'Sensei' ) ) {
