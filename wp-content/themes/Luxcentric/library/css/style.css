@@ -1745,6 +1745,12 @@ POSTS & CONTENT STYLES
         font-size: 3.75rem;
         line-height: 0.25;
         vertical-align: middle; }
+      .entry-content ul.checklist li ul.disc li {
+        list-style-type: disc;
+        text-indent: 0em;
+        padding-left: 0em; }
+        .entry-content ul.checklist li ul.disc li:before {
+          content: ''; }
   .entry-content ol {
     list-style-type: decimal;
     /*margin-left: 0.25em; */ }

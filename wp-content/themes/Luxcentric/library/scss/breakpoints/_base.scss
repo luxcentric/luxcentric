@@ -532,6 +532,15 @@ POSTS & CONTENT STYLES
 			  			line-height: 0.25;
 			  			vertical-align: middle;
 					}
+
+					ul.disc li {
+						list-style-type: disc;
+						text-indent: 0em;
+						padding-left: 0em;
+						&:before {
+								content: '';
+						}
+					}
 				}
 			}
 
