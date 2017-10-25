@@ -119,14 +119,14 @@ new image size.
 
 /************* THEME CUSTOMIZE *********************/
 
-/* 
+/*
   A good tutorial for creating your own Sections, Controls and Settings:
   http://code.tutsplus.com/series/a-guide-to-the-wordpress-theme-customizer--wp-33722
-  
+
   Good articles on modifying the default options:
   http://natko.com/changing-default-wordpress-theme-customization-api-sections/
   http://code.tutsplus.com/tutorials/digging-into-the-theme-customizer-components--wp-27162
-  
+
   To do:
   - Create a js for the postmessage transport method
   - Create some sanitize functions to sanitize inputs
@@ -136,7 +136,7 @@ new image size.
 function bones_theme_customizer($wp_customize) {
   // $wp_customize calls go here.
   //
-  // Uncomment the below lines to remove the default customize sections 
+  // Uncomment the below lines to remove the default customize sections
 
   // $wp_customize->remove_section('title_tagline');
   // $wp_customize->remove_section('colors');
@@ -146,7 +146,7 @@ function bones_theme_customizer($wp_customize) {
 
   // Uncomment the below lines to remove the default controls
   // $wp_customize->remove_control('blogdescription');
-  
+
   // Uncomment the following to change the default section titles
   // $wp_customize->get_section('colors')->title = __( 'Theme Colors' );
   // $wp_customize->get_section('background_image')->title = __( 'Images' );
@@ -266,10 +266,10 @@ function remove_empty_p( $content ) {
 add_filter('the_content', 'remove_empty_p', 20, 1);
 
 // clean up formatting in shortcodes
-function snix_clean_shortcodes($content) {   
+function snix_clean_shortcodes($content) {
   $array = array (
-    '<p>[' => '[', 
-    ']</p>' => ']', 
+    '<p>[' => '[',
+    ']</p>' => ']',
     ']<br />' => ']'
   );
 
@@ -315,7 +315,7 @@ function add_search_box_to_menu( $items, $args ) {
 /*add_filter( 'wp_nav_menu_items', 'add_loginout_footerlink', 10, 2 );
 function add_loginout_footerlink( $items, $args ) {
   if (is_user_logged_in() && $args->theme_location == 'footer-links') {
-      $newitems =  $items . '<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">My Account</a></li>' 
+      $newitems =  $items . '<li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12"><a href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">My Account</a></li>'
       . '<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'">Logout</a></li>';
       $items = $newitems;
   }
@@ -335,7 +335,7 @@ function add_loginout_footerlink( $items, $args ) {
 add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
 function add_loginout_link( $items, $args ) {
   if (is_user_logged_in() && $args->theme_location == 'woo-links') {
-      $newitems = '<li id="menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8"><a href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">MY ACCOUNT</a></li>' 
+      $newitems = '<li id="menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8"><a href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '">MY ACCOUNT</a></li>'
       . '<li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'">MEMBER LOG OUT</a></li>' . $items;
       $items = $newitems;
   }
@@ -397,7 +397,7 @@ function my_theme_wrapper_end() {
  * Tutorial: http://skyver.ge/c
  */
 function sv_free_checkout_fields() {
-  
+
   // Bail we're not at checkout, or if we're at checkout but payment is needed
   if ( function_exists( 'is_checkout' ) && ( ! is_checkout() || ( is_checkout() && WC()->cart->needs_payment() ) ) ) {
     return;
@@ -407,11 +407,11 @@ function sv_free_checkout_fields() {
   remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 
    // Remove the "Additional Info" order notes
-  add_filter( 'woocommerce_enable_order_notes_field', '__return_false' ); 
+  add_filter( 'woocommerce_enable_order_notes_field', '__return_false' );
 
   // Unset the fields we don't want in a free checkout
   function unset_unwanted_checkout_fields( $fields ) {
-  
+
     // add or remove billing fields you do not want
     // list of fields: http://docs.woothemes.com/document/tutorial-customising-checkout-fields-using-actions-and-filters/#section-2
     $billing_keys = array(
@@ -429,8 +429,8 @@ function sv_free_checkout_fields() {
     foreach( $billing_keys as $key ) {
       unset( $fields['billing'][$key] );
     }
-    
-    return $fields;  
+
+    return $fields;
   }
   add_filter( 'woocommerce_checkout_fields', 'unset_unwanted_checkout_fields' );
 
@@ -438,9 +438,12 @@ function sv_free_checkout_fields() {
   function print_custom_css() {
     echo '<style>.create-account { display: inline-block; margin: 1em 0; }</style>';
   }
-  add_action( 'wp_head', 'print_custom_css' ); 
+  add_action( 'wp_head', 'print_custom_css' );
 }
-add_action( 'wp', 'sv_free_checkout_fields' );
+// free products cause billing fields to be hidden but they are still
+// required so preventing checkout; until we figure out how to fix that,
+// just show all fields
+//add_action( 'wp', 'sv_free_checkout_fields' );
 
 add_filter( 'default_checkout_billing_state', 'change_default_billing_checkout_state' );
 function change_default_billing_checkout_state() {
@@ -450,14 +453,14 @@ function change_default_billing_checkout_state() {
 /* add redirect to scheduler message to email */
 add_action( 'woocommerce_email_before_order_table', 'add_order_email_instructions', 10, 2 );
 function add_order_email_instructions( $order, $sent_to_admin ) {
-  
+
   if ( ! $sent_to_admin ) {
     $items = $order->get_items();
 
     foreach ( $items as $item ) {
       $product_name = $item['name'];
       $product_id = $item['product_id'];
-   
+
       if( has_term( 'tech-tackle', 'product_cat', $product_id ) ) {
         echo '<p><strong>Next Step:</strong> Please <a class="calendly" href="http://http://50.87.234.135/schedule-tech-tackle/" alt="Schedule Tech Tackle">Click Here</a> to schedule an appointment for ' . $product_name . '.</p>';
       } elseif( has_term( 'brain-access', 'product_cat', $product_id ) ) {
