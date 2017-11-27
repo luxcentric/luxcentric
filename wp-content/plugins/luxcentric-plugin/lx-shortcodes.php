@@ -38,4 +38,21 @@ function lx_not_signed_in( $atts, $content = null ) {
 
 add_shortcode( 'lx_not_signed_in', 'lx_not_signed_in' );
 
+/**
+ * SHORTCODE: [lx_signed_in]
+ *
+ * Show text only if user is signed in.
+ *
+ * [lx_signed_in]some text[/lx_signed_in]
+ */
+function lx_signed_in( $atts, $content = null ) {
+	if ( is_user_logged_in() ) {
+		return $content;
+	} else {
+		return "";
+	}
+}
+
+add_shortcode( 'lx_signed_in', 'lx_signed_in' );
+
 ?>

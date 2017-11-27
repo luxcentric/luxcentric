@@ -3,7 +3,7 @@
  * Plugin Name: Luxcentric Site Plugin
  * Plugin URI: https://luxcentric.com/
  * Description: Custom code for luxcentric website.
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: Gary Ritchie
  * Requires at least: 4.7
  * Tested up to: 4.9
