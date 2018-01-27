@@ -80,6 +80,7 @@ wp-content/plugins/*
 /license.txt
 /readme.html
 /wp-activate.php
+/wp-admin/
 /wp-blog-header.php
 /wp-comments-post.php
 /wp-config-sample.php
