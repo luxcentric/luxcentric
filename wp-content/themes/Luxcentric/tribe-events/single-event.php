@@ -31,8 +31,6 @@ $event_id = get_the_ID();
 	<!-- Notices -->
 	<?php tribe_the_notices() ?>
 
-
-
 	<!-- Event header -->
 	<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
 		<!-- Navigation -->
@@ -47,32 +45,37 @@ $event_id = get_the_ID();
 
 	<?php while ( have_posts() ) :  the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<figure>
-			<!-- Event featured image, but exclude link -->
-			<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
-	<figcaption>
-	<?php the_title( '<h1 class="tribe-events-single-event-title">', '</h1>' ); ?>
+			<div class="m-all t-1of2 d-1of2 col">
+				<figure>
+					<!-- Event featured image, but exclude link -->
+					<?php echo tribe_event_featured_image( $event_id, 'full', false ); ?>
+					<figcaption>
+						<?php the_title( '<h1 class="tribe-events-single-event-title">', '</h1>' ); ?>
 
-	<div class="tribe-events-schedule tribe-clearfix">
-		<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
-		<?php if ( tribe_get_cost() ) : ?>
-			<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
-		<?php endif; ?>
-	</div>
-	</figcaption>
-</figure>
-			<!-- Event content -->
-			<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
-			<div class="tribe-events-single-event-description tribe-events-content">
-				<?php the_content(); ?>
+						<div class="tribe-events-schedule tribe-clearfix">
+							<?php echo tribe_events_event_schedule_details( $event_id, '<h2>', '</h2>' ); ?>
+							<?php if ( tribe_get_cost() ) : ?>
+								<span class="tribe-events-cost"><?php echo tribe_get_cost( null, true ) ?></span>
+							<?php endif; ?>
+						</div>
+					</figcaption>
+				</figure>
 			</div>
-			<!-- .tribe-events-single-event-description -->
-			<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
-
-			<!-- Event meta -->
-			<?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
-			<?php tribe_get_template_part( 'modules/meta' ); ?>
-			<?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
+			<div class="m-all t-1of2 d-1of2 col last-col cf">
+				<!-- .tribe-events-single-event-description -->
+				<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
+				<!-- Event meta -->
+				<?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
+				<?php tribe_get_template_part( 'modules/meta' ); ?>
+				<?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
+				<?php do_action( 'tribe_events_single_event_before_the_content' ) ?>
+			</div>
+			<!-- Event content -->
+			<div class="m-all t-all d-all"
+				<div class="tribe-events-single-event-description tribe-events-content tribe-clearfix">
+					<?php the_content(); ?>
+				</div>
+			</div>
 		</div> <!-- #post-x -->
 		<?php if ( get_post_type() == Tribe__Events__Main::POSTTYPE && tribe_get_option( 'showComments', false ) ) comments_template() ?>
 	<?php endwhile; ?>
