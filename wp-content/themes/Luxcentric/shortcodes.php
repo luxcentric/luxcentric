@@ -1,6 +1,6 @@
 <?php
-/* 
-define shortcodes here 
+/*
+define shortcodes here
 */
 
 function one_half( $atts, $content = null ) {
@@ -14,7 +14,7 @@ function one_half( $atts, $content = null ) {
     else {
         $position = '';
     }
- 
+
     return '<div class="m-all t-1of2 d-1of2 col' . $position . '">' . do_shortcode( $content ) . '</div>';
 }
 add_shortcode('one_half', 'one_half');
@@ -31,7 +31,7 @@ function one_third( $atts, $content = null ) {
         $position = '';
     }
 
-    return '<div class="m-all t-1of3 d-1of3 col' . $position . '">' . do_shortcode( $content ) . '</div>'; 
+    return '<div class="m-all t-1of3 d-1of3 col' . $position . '">' . do_shortcode( $content ) . '</div>';
 }
 add_shortcode('one_third', 'one_third');
 
@@ -47,7 +47,7 @@ function two_third( $atts, $content = null ) {
         $position = '';
     }
 
-    return '<div class="m-all t-2of3 d-2of3 col' . $position . '">' . do_shortcode( $content ) . '</div>'; 
+    return '<div class="m-all t-2of3 d-2of3 col' . $position . '">' . do_shortcode( $content ) . '</div>';
 }
 add_shortcode('two_third', 'two_third');
 
@@ -55,7 +55,7 @@ function one_quarter( $atts, $content = null ) {
     extract( shortcode_atts( array(
             'last' => ''
         ), $atts ) );
- 
+
     if ( $last == 'yes') {
         $position = ' last-col cf';
     }
@@ -63,7 +63,7 @@ function one_quarter( $atts, $content = null ) {
         $position = '';
     }
 
-    return '<div class="m-1of2 t-1of4 d-1of4 col' . $position . '">' . do_shortcode( $content ) . '</div>';  
+    return '<div class="m-1of2 t-1of4 d-1of4 col' . $position . '">' . do_shortcode( $content ) . '</div>';
 }
 add_shortcode('one_quarter', 'one_quarter');
 
@@ -71,15 +71,15 @@ function three_quarter( $atts, $content = null ) {
     extract( shortcode_atts( array(
             'last' => ''
         ), $atts ) );
- 
+
     if ( $last == 'yes') {
         $position = ' last-col cf';
     }
     else {
         $position = '';
     }
- 
-    return '<div class="m-all t-3of4 d-3of4 col' . $position . '">' . do_shortcode( $content ) . '</div>'; 
+
+    return '<div class="m-all t-3of4 d-3of4 col' . $position . '">' . do_shortcode( $content ) . '</div>';
 }
 add_shortcode('three_quarter', 'three_quarter');
 
@@ -90,7 +90,8 @@ function row_func($atts, $content = null) {
             'bgimage' => null,
             'bgcolor' => 'transparent',
             'bgpos' => 'center',
-            'align' => null
+            'align' => null,
+            'padding' => null
         ), $atts ) );
 
     if ( isset ( $align ) ) {
@@ -105,6 +106,19 @@ function row_func($atts, $content = null) {
         $txt_color = "#fff";
     }
 
+    $padding_str = 'padding: ';
+    if ( isset ( $padding ) ) {
+        $padding_str .=  $padding . ';';
+    } else {
+        if ( isset ( $bgimage ) ) {
+            $padding_str .= '1em 0;';
+        } elseif ( $bgcolor == 'transparent' ) {
+            $padding_str .= '0;';
+        } else {
+            $padding_str .= '1em 0;';
+        }
+    }
+
     $output = '<div class="';
 
     if ( isset ( $name ) )
@@ -112,11 +126,11 @@ function row_func($atts, $content = null) {
 
     if ( isset ( $bgimage ) ) {
         $imageurl = get_template_directory_uri() . '/' . $bgimage;
-        $output .= ' bgimage row cf" style="background-image: url(' . $imageurl . '); background-position: ' . $bgpos . '; padding: 1em 0; ' . $align_str . '">' . do_shortcode( $content ) . '</div>';
+        $output .= ' bgimage row cf" style="background-image: url(' . $imageurl . '); background-position: ' . $bgpos . '; ' . $padding_str . ' ' . $align_str . '">' . do_shortcode( $content ) . '</div>';
     } elseif ( $bgcolor == 'transparent' ) {
-        $output .= ' row cf" style="padding: 0; ' . $align_str . '">' . do_shortcode( $content ) . '</div>';
+        $output .= ' row cf" style="' . $padding_str . ' ' . $align_str . '">' . do_shortcode( $content ) . '</div>';
     } else {
-        $output .= ' row cf" style="background-color: ' . $bgcolor . '; padding: 1em 0; color: ' . $txt_color . '; ' . $align_str . '">' . do_shortcode( $content ) . '</div>';
+        $output .= ' row cf" style="background-color: ' . $bgcolor . '; '. $padding_str . ' color: ' . $txt_color . '; ' . $align_str . '">' . do_shortcode( $content ) . '</div>';
     }
 
     return $output;
@@ -137,7 +151,7 @@ function wrap_func($atts, $content = null) {
         $output .= $name;
 
     if ( isset ( $width ) )
-        $output .= ' wrap' . $width . ' cf">' . do_shortcode( $content ) . '</div>'; 
+        $output .= ' wrap' . $width . ' cf">' . do_shortcode( $content ) . '</div>';
     else {
         if ( $align == 'center' )
             $output .= ' wrap cf" style="margin: 0 auto;">' . do_shortcode( $content ) . '</div>';
@@ -180,9 +194,9 @@ function flex_container_func($atts, $content = null) {
     if ( $flex_id == '' ) {
         return '<div class="flex-container">' . do_shortcode( $content ) . '</div>';
     } else {
-        return '<div id="' . $flex_id . '" class="flex-container">' . do_shortcode( $content ) . '</div>';        
+        return '<div id="' . $flex_id . '" class="flex-container">' . do_shortcode( $content ) . '</div>';
     }
-}    
+}
 add_shortcode('flex_container', 'flex_container_func');
 
 function flex_item_func($atts, $content = null) {
@@ -207,7 +221,7 @@ function flex_item_func($atts, $content = null) {
     }
 
     return $output;
-}    
+}
 add_shortcode('flex_item', 'flex_item_func');
 
 function clearthefloat_func() {
