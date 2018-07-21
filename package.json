@@ -4,7 +4,9 @@
   "scripts": {
     "wp": "wpcmd() { docker exec $(docker ps -lq) /bin/bash -c \"sudo -u www-data wp $(echo $@)\"; };wpcmd "
   },
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^6.2.0"
+  },
   "devDependencies": {
     "chalk": "^1.1.0",
     "dateformat": "^1.0.11",
