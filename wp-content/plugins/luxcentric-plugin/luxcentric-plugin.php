@@ -3,9 +3,9 @@
  * Plugin Name: Luxcentric Site Plugin
  * Plugin URI: https://luxcentric.com/
  * Description: Custom code for luxcentric website.
- * Version: 1.0.7
+ * Version: 1.0.8
  * Author: Gary Ritchie
- * Requires at least: 4.7
+ * Requires at least: 4.9
  * Tested up to: 4.9
  */
 if ( ! defined( 'ABSPATH' ) ) {
@@ -14,6 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once( plugin_dir_path( __FILE__ ) . 'lx-shortcodes.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'lx-zoho.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'lx-freeproduct.php' );
 
 /**
  * Modified version of class-sensei-course.php, private function
