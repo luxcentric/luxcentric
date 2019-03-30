@@ -542,4 +542,9 @@ function wpb_add_googleanalytics() { ?>
     </script>
 <?php }
 
+// add first name and last name to register form; this used to be done by the
+// simple registration form plugin, but we don't need that plugin any more
+add_action( 'woocommerce_register_form_start', 'luxcentric_add_name_input' );
+add_action( 'woocommerce_created_customer', 'luxcentric_save_name_input' );
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
