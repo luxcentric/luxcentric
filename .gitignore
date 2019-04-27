@@ -49,6 +49,7 @@ tmp/
 *.php.in
 .idea/
 temp/
+profile/
 ._*
 .Trashes
 .svn

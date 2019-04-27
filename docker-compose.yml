@@ -1,7 +1,7 @@
 version: '3'
 services:
   wordpress:
-    image: luxcentric/wordpress:0.16.1-php7.0
+    image: luxcentric/wordpress:0.16.2-php7.2
     ports:
       - 8080:80
       - 4040:443
@@ -11,6 +11,7 @@ services:
       - ./wp-content/uploads:/app/wp-content/uploads
       - ./wp-content/themes/Luxcentric:/app/wp-content/themes/Luxcentric
       - ./wp-content/plugins:/app/wp-content/plugins
+      - ./profile:/profile
     environment:
       DB_NAME: wordpress
       DB_PASS: root
@@ -18,6 +19,7 @@ services:
       WP_DEBUG: 'true'
       WP_DEBUG_LOG: 'true'
       WP_DEBUG_DISPLAY: 'false'
+      XDEBUG_CONFIG: remote_host=host.docker.internal
   phpmyadmin:   
     image: phpmyadmin/phpmyadmin
     environment:
