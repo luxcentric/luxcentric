@@ -547,4 +547,20 @@ function wpb_add_googleanalytics() { ?>
 add_action( 'woocommerce_register_form_start', 'luxcentric_add_name_input' );
 add_action( 'woocommerce_created_customer', 'luxcentric_save_name_input' );
 
+// START ban-hammer plugin woocommerce integration
+add_action('init', 'mydomain_plugin_checks');
+
+function mydomain_plugin_checks(){
+	if ( class_exists('BanHammer') ) {
+		add_filter('woocommerce_registration_errors', 'woocommerce_banhammer_validation', 10, 3 );
+	}
+}
+
+function woocommerce_banhammer_validation( $validation_errors, $username, $email ) {
+	if( (new BanHammer)->banhammer_drop( $username, $email, $validation_errors ) )
+		return new WP_Error( 'registration-error-bad-email', (new BanHammer)->options['message'] );
+	return $validation_errors;
+}
+// END ban-hammer plugin woocommerce integration
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
