@@ -1,7 +1,7 @@
 version: '3'
 services:
   wordpress:
-    image: luxcentric/wordpress:0.16.2-php7.2
+    image: luxcentric/wordpress:0.16.3-php7.3
     ports:
       - 8080:80
       - 4040:443
