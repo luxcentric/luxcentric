@@ -3,7 +3,7 @@
  * Plugin Name: Luxcentric Site Plugin
  * Plugin URI: https://luxcentric.com/
  * Description: Custom code for luxcentric website.
- * Version: 1.0.10
+ * Version: 1.0.11
  * Author: Gary Ritchie
  * Requires at least: 4.9
  * Tested up to: 5.2.3
@@ -29,47 +29,6 @@ function lx_add_course_access_permission_message( $message ) {
 		}
 	}
 }
-
-// determine if we should use luxcentric_course_prefix instead
-// of Sensei_Course::the_course_enrolment_actions
-function luxcentric_use_custom_enrolment_actions() {
-	global $post;
-
-	if ( 'course' != $post->post_type ) {
-		return false;
-	}
-
-	if ( is_user_logged_in() ) {
-		return false;
-	}
-
-	if ( Sensei_WC::is_woocommerce_active() && Sensei_WC::is_course_purchasable( $post->ID ) ) {
-		return false;
-	}
-
-	return true;
-}
-
-// modified version of Sensei_Course::the_course_enrolment_actions; only call
-// if user not logged in, and it's a free course
-function luxcentric_course_prefix() {
-
-	global $post;
-
-	if ( ! luxcentric_use_custom_enrolment_actions() ) {
-		error_log( 'unexpected call to luxcentric_course_prefix' );
-
-		return;
-	}
-
-	?>
-    <section class="course-meta course-enrolment">
-	<?php
-	echo do_shortcode( '[woocommerce_my_account]' );
-	?>
-    </section><?php
-
-}// end luxcentric_course_prefix
 
 function luxcentric_add_name_input(){
 	// Name Field Option.
