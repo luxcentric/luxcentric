@@ -351,7 +351,7 @@ function add_loginout_link( $items, $args ) {
 remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
 
-/* woocommerce and woocommerce sensei wrapper */
+/* woocommerce wrapper */
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
@@ -362,27 +362,6 @@ add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
-}
-
-// hide "Your theme does not declare Sensei support message
-add_action( 'after_setup_theme', 'declare_sensei_support' );
-function declare_sensei_support() {
-    add_theme_support( 'sensei' );
-}
-
-global $woothemes_sensei;
-remove_action( 'sensei_before_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper' ), 10 );
-remove_action( 'sensei_after_main_content', array( $woothemes_sensei->frontend, 'sensei_output_content_wrapper_end' ), 10 );
-
-add_action('sensei_before_main_content', 'my_theme_wrapper_start', 10);
-add_action('sensei_after_main_content', 'my_theme_wrapper_end', 10);
-
-function my_theme_wrapper_start() {
-  echo '<div id="content"><div id="inner-content" class="wrap cf"><main id="main" role="main"><article role="article"><section class="entry-content cf" itemprop="articleBody">';
-}
-
-function my_theme_wrapper_end() {
-  echo '</section></article></main></div></div>';
 }
 
 /* remove woo add-to-cart button */
@@ -461,12 +440,6 @@ add_filter( 'woocommerce_account_menu_items', 'my_custom_my_account_menu_items' 
 //      the_excerpt();
 //    echo '</div>';
 //}
-
-// display course thumbnail before course title
-if ( function_exists( 'Sensei' ) ) {
-    remove_action('sensei_course_content_inside_before', array( Sensei()->course, 'course_image' ) ,10, 1 );
-    add_action('sensei_course_content_inside_before', array( Sensei()->course, 'course_image' ) ,3, 1 );
-}
 
 /* tribe events calendar */
 // Singular

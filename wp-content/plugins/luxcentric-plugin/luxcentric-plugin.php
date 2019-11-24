@@ -3,10 +3,10 @@
  * Plugin Name: Luxcentric Site Plugin
  * Plugin URI: https://luxcentric.com/
  * Description: Custom code for luxcentric website.
- * Version: 1.0.11
+ * Version: 1.0.12
  * Author: Gary Ritchie
  * Requires at least: 4.9
- * Tested up to: 5.2.3
+ * Tested up to: 5.3
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -14,21 +14,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once( plugin_dir_path( __FILE__ ) . 'lx-shortcodes.php' );
 require_once( plugin_dir_path( __FILE__ ) . 'lx-freeproduct.php' );
-
-/**
- * Modified version of class-sensei-course.php, private function
- * Sensei_Course::add_course_access_permission_message
- *
- */
-function lx_add_course_access_permission_message( $message ) {
-	global $post;
-	if ( Sensei()->settings->get( 'access_permission' ) ) {
-		$message = apply_filters( 'sensei_couse_access_permission_message', $message, $post->ID );
-		if ( ! empty( $message ) ) {
-			Sensei()->notices->add_notice( $message, 'info' );
-		}
-	}
-}
 
 function luxcentric_add_name_input(){
 	// Name Field Option.
