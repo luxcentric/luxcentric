@@ -12,7 +12,7 @@
  *
  * @see https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates/Emails
- * @version 3.5.0
+ * @version 3.7.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -37,4 +37,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 </p>
 <p><?php esc_html_e( 'Thanks for reading.', 'woocommerce' ); ?></p>
 
-<?php do_action( 'woocommerce_email_footer', $email ); ?>
+<?php
+/**
+ * Show user-defined additional content - this is set in each email's settings.
+ */
+if ( $additional_content ) {
+	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
+}
+
+do_action( 'woocommerce_email_footer', $email );
