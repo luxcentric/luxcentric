@@ -364,6 +364,14 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
+function my_theme_wrapper_start() {
+	echo '<div id="content"><div id="inner-content" class="wrap cf"><main id="main" role="main"><article role="article"><section class="entry-content cf" itemprop="articleBody">';
+}
+
+function my_theme_wrapper_end() {
+	echo '</section></article></main></div></div>';
+}
+
 /* remove woo add-to-cart button */
 //function remove_loop_button(){
   //remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
