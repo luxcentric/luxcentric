@@ -1876,6 +1876,11 @@ h2.tribe-events-page-title {
 
 			.tribe-tickets-attendees-list-optout { display: none; }
 		}
+
+		.tribe-button.tribe-button--rsvp {
+			@extend .woo-btn;
+			width: auto !important;
+		}
 	}
 
 	#tribe-events-footer { border-top: 1px solid $light-blue; }
