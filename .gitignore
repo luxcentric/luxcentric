@@ -95,4 +95,4 @@ wp-content/plugins/*
 /wp-trackback.php
 /xmlrpc.php
 /wp-includes/
-
+/wp-content/themes/index.php
