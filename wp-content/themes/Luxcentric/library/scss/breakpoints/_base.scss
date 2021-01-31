@@ -93,7 +93,6 @@ style a page via class
 			#main-menu { display: none; }
 		}
 		.footer {
-			#testimonials_widget-2 { display: none; }
 			#text-3 { display: none; }
 			.copyright { display: none; }
 		}
@@ -848,55 +847,6 @@ POSTS & CONTENT STYLES
 
 		select { margin-bottom: 0; }
 	}
-
-.testimonials-widget-testimonials {
-    margin-top: 1.5em;
-
-    .testimonials-widget-testimonial {
-        .image {
-            display: inline-block;
-            margin-right: 0.75em;
-            padding-right: 100px;
-            height: 130px;
-            width: auto;
-            background: url(../images/assets/backgrounds/testimonialBg.png) no-repeat right center;
-
-            img {
-                margin: 0 !important;
-                width: 130px;
-                height: 130px;
-                object-fit: cover;
-                overflow: hidden;
-                border: solid 5px $white;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                border-radius: 50%;
-                background-color: $white; // hide gap between image and border
-            }
-        }
-
-        blockquote {
-            margin: 0;
-            padding: 0;
-            text-align: left;
-
-            p { overflow: hidden; }
-        }
-
-        .credit {
-            color: $salmon;
-            font-size: 0.88em;
-            font-weight: 700;
-            font-style: italic;
-            margin-left: 253px;
-            text-align: left;
-
-            &:before { content: ""; }
-
-            .join:before { content: " • "; }
-        }
-    }
-}
 
 .tealBg {
 	background: #00657e; /* Old browsers */
@@ -2420,32 +2370,6 @@ SIDEBARS & ASIDES
 
 	#sidebar3 {
 		margin: 0 auto;
-
-		#testimonials_widget-2 {
-			margin: 0 auto;
-
-			.widgettitle {
-				font-size: 1.6em;
-				font-weight: 700;
-				line-height: 1.5;
-				color: $teal;
-			}
-
-			blockquote {
-				margin: 0;
-                text-align: left;
-			}
-
-			.credit {
-				display: block;
-				text-align: center;
-				font-size: 0.9em;
-				font-weight: 700;
-				font-style: italic;
-
-				&:before { content: ""; }
-			}
-		}
 
 		#text-2 { color: $navy; }
 

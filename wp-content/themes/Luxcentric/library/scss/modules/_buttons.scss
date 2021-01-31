@@ -134,3 +134,12 @@ and it will create a button dependant on those variables.
   }
 
 } // end large button
+
+// same as large-btn, strong testimonials widget submit button
+#wpmtst_submit_testimonial {
+	@extend %btn;
+	padding: 6px 1em !important;
+	background-repeat: no-repeat !important;
+	background-position: right center !important;
+	background-size: 18px 18px;
+}
